@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Leetcode.Common;
-namespace Leetcode.Problems {
-    public class P226_Invert_Binary_Tree {
 
+namespace Leetcode.Problems {
+    public class P106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal {
         public class TreeNode {
             public int val;
             public TreeNode left;
@@ -17,16 +16,11 @@ namespace Leetcode.Problems {
                 this.right = right;
             }
         }
-        public TreeNode InvertTree(TreeNode root) {
-            if (root != null) {
-                TreeNode temp = root.left;
-                root.left = root.right;
-                root.right = temp;
-
-                InvertTree(root.left);
-                InvertTree(root.right);
-            }
-            return root;
+        public TreeNode BuildTree(int[] inorder, int[] postorder) {
+            throw new NotImplementedException();
+        }
+        private TreeNode MakeNode(int left, int mid, int right, int[] inorder) {
+            throw new NotImplementedException();
         }
     }
 }

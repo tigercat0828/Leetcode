@@ -4,28 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Leetcode.Common;
+
 namespace Leetcode.Problems {
-    public class P103_Binary_Tree_Zigzag_Level_Order_Traversal {
-        public class TreeNode {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null) {
-                this.val = val;
-                this.left = left;
-                this.right = right;
-            }
-        }
-        public IList<IList<int>> ZigzagLevelOrder(TreeNode root) {
+    public class P102_Binary_Tree_Level_Order_Traversal {
+      
+        public IList<IList<int>> LevelOrder(TreeNode root) {
             if(root == null) {
                 return new List<IList<int>>();
             }
             List<IList<int>> listList = new();
             Queue<TreeNode> queue = new();
+            int count = 1;
             queue.Enqueue(root);
-            bool reverse = false;
             while (queue.Count > 0) {
-                List<int> list = new();
+                List<int> list = new List<int>();
                 int size = queue.Count;
                 for (int i = 0; i < size; i++) {
                     TreeNode node = queue.Dequeue();
@@ -33,13 +25,9 @@ namespace Leetcode.Problems {
                     if(node.left != null) {
                         queue.Enqueue(node.left);
                     }
-                    if(node.right != null) {
+                    if (node.right != null) { 
                         queue.Enqueue(node.right);
                     }
-                }
-                reverse = !reverse;
-                if (reverse) {
-                    list.Reverse();
                 }
                 listList.Add(list);
             }

@@ -6,6 +6,16 @@ using System.Threading.Tasks;
 using Leetcode.Common;
 namespace Leetcode.Problems {
     public class P101_Symmetric_Tree {
+        public class TreeNode {
+            public int val;
+            public TreeNode left;
+            public TreeNode right;
+            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null) {
+                this.val = val;
+                this.left = left;
+                this.right = right;
+            }
+        }
         public bool IsSymmetric(TreeNode root) {
             Queue<TreeNode> queue = new Queue<TreeNode>();
 
@@ -48,6 +58,7 @@ namespace Leetcode.Problems {
             }
             return recurive(left.left, right.right) && recurive(left.right, right.left);
         }
+        
     }
 
 }
