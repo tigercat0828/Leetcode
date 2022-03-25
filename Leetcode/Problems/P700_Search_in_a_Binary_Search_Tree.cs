@@ -28,14 +28,19 @@ namespace Leetcode.Problems {
         }
         // recursive
         public TreeNode SearchBST2(TreeNode root, int val) {
-            if(root == null) return null;
-            if(val > root.val){
-                SearchBST2(root.right, val);
+            if (root == null) {
+                return null;
             }
-            if(val < root.val) {
-                SearchBST2(root.left, val);
+            if (val == root.val) {
+                return root;
             }
-            return root;
+            if (val > root.val) {
+                return SearchBST(root.right, val);
+            }
+            if (val < root.val) {
+                return SearchBST(root.left, val);
+            }
+            return null;
         }
     }
 }
