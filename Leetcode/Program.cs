@@ -6,11 +6,30 @@ using static System.Console;
 
 
 
-Random random = new Random();
-for (int i = 0; i < 10; i++) {
-    Console.WriteLine(30);
-    Console.WriteLine(random.Next(1, (int)MathF.Pow(2, 29)));
-}
 
-P779_Kth_Symbol_in_Grammar P = new();
-P.KthGrammar(30, 515676024);
+public class Solution {
+    // O(n)
+    public void Merge(int[] nums1, int m, int[] nums2, int n) {
+        int[] Nums = new int[m+n];
+        int i = 0;
+        int j = 0;
+        int k = 0;
+        while(i <  m&& j < n) {
+            if (nums1[i] < nums2[j]) {
+                Nums[k++] = nums1[i++];
+            }
+            else {
+                Nums[k++] = nums2[j++];
+            }
+        }
+        // add remain part
+        while (i < m) {
+            Nums[k++] = nums1[i++];
+        }
+        while (j < n) { 
+            Nums[k] = nums2[j++];
+        }
+        Array.Copy(Nums, nums1, Nums.Length);
+    }
+
+}
