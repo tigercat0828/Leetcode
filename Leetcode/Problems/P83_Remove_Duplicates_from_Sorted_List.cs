@@ -6,24 +6,26 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Leetcode.Problems {
-    public  class P203_Remove_Linked_List_Elements {
-        public ListNode RemoveElements(ListNode head, int val) {
-            ListNode tmpHead = new ListNode(val + 1, head);     // different from param:val
-            head = tmpHead;
-            ListNode previous = head;
-            ListNode current = head.next;
+    public class P83_Remove_Duplicates_from_Sorted_List {
+        public ListNode DeleteDuplicates(ListNode head) {
+            if (head == null) return null;
+            ListNode Dummy = new ListNode(head.val + 1);
+            Dummy.next = head;
 
+            int hold = Dummy.val;
+            ListNode current = head;
+            ListNode previous = Dummy;
             while (current != null) {
-                if (current.val == val) {
+                if (hold == current.val) {
                     previous.next = current.next;
                     current = current.next;
                 }
                 else {
+                    hold = current.val;
                     previous = current;
                     current = current.next;
                 }
             }
-            head = head.next;   // delete the temp head
             return head;
         }
     }
