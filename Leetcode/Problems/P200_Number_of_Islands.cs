@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P200_Number_of_Islands {
         bool[][] isVisited;
         readonly int[] dr = { 0, 0, -1, 1 }; // direciotn for row:i

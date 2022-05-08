@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
 
     /*
     fast = 2 * slow     
@@ -30,7 +24,7 @@ namespace Leetcode.Problems {
                 return null;
             }
             ListNode current = head;
-            while(current != null && meet != null) {
+            while (current != null && meet != null) {
                 current = current.next;
                 meet = meet.next;
                 if (current == meet) {
@@ -41,15 +35,15 @@ namespace Leetcode.Problems {
         }
 
         private ListNode FindMeetNode(ListNode head) {
-            if(head == null) {
+            if (head == null) {
                 return null;
             }
             ListNode fast = head;
             ListNode slow = head;
-            while (fast != null && slow != null ){
+            while (fast != null && slow != null) {
                 fast = fast.next?.next;
                 slow = slow.next;
-                if(fast == slow) {
+                if (fast == slow) {
                     return fast;
                 }
             }
@@ -62,14 +56,14 @@ namespace Leetcode.Problems {
             List<ListNode> record = new List<ListNode>();
             record.Add(current);
             int count = 0;
-            while (current != null) { 
+            while (current != null) {
                 current = current.next;
                 if (record.Contains(current)) {
                     return current;
                 }
                 record.Add(current);
                 count++;
-                if(count > 10001) {
+                if (count > 10001) {
                     return null;
                 }
             }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P27_Remove_Element {
         public int RemoveElement(int[] nums, int val) {
             int length = nums.Length;

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P367_Valid_Perfect_Square {
         // binary search O(logn)
         public bool IsPerfectSquare(int num) {

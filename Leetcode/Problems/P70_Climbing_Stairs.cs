@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P70_Climbing_Stairs {
         // iterative
         public int ClimbStairs(int n) {
@@ -30,10 +24,10 @@ namespace Leetcode.Problems {
             return climb(n);
         }
         public int climb(int n) {
-            
+
             if (n <= 3) return n;
-            if(memo[n] != -1) return memo[n];
-            memo[n] = climb(n-1) + climb(n-2);
+            if (memo[n] != -1) return memo[n];
+            memo[n] = climb(n - 1) + climb(n - 2);
             return memo[n];
         }
     }

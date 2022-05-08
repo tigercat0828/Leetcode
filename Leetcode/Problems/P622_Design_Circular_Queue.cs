@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P622_Design_Circular_Queue {
         int front;
         int rear;
@@ -17,7 +11,7 @@ namespace Leetcode.Problems {
             queue = new int[k + 1];
         }
         public bool EnQueue(int value) {
- 
+
             if (IsFull()) {
                 return false;
             }
@@ -28,7 +22,7 @@ namespace Leetcode.Problems {
 
         public bool DeQueue() {
             if (IsEmpty()) {
-                return false ;
+                return false;
             }
             front = (front + 1) % capacity;
             return true;
@@ -45,11 +39,11 @@ namespace Leetcode.Problems {
             if (IsEmpty()) {
                 return -1;
             }
-            if(rear -1 == -1) {
+            if (rear - 1 == -1) {
                 return queue[capacity - 1];
             }
             else {
-                return queue[rear-1];
+                return queue[rear - 1];
             }
         }
 
@@ -61,7 +55,7 @@ namespace Leetcode.Problems {
         }
 
         public bool IsFull() {
-            if((rear + 1) %  capacity == front) {
+            if ((rear + 1) % capacity == front) {
                 return true;
             }
             return false;

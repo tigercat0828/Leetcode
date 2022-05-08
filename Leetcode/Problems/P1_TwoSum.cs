@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P1_TwoSum {
         // O(n)
         public int[] TwoSum(int[] nums, int target) {
@@ -25,7 +19,7 @@ namespace Leetcode.Problems {
         public int[] TwoSum2(int[] nums, int target) {
             for (int i = 0; i < nums.Length; i++) {
                 for (int j = i; j < nums.Length; j++) {
-                    if(i != j && nums[i] + nums[j] == target) {
+                    if (i != j && nums[i] + nums[j] == target) {
                         return new[] { i, j };
                     }
                 }
@@ -33,5 +27,5 @@ namespace Leetcode.Problems {
             return null; // Not found;
         }
     }
-    
+
 }

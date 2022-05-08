@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P744_Find_Smallest_Letter_Greater_Than_Target {
         public class Solution {
             public char NextGreatestLetter(char[] letters, char target) {

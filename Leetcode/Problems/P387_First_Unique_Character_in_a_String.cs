@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P387_First_Unique_Character_in_a_String {
 
         class CharNode {
@@ -40,7 +34,7 @@ namespace Leetcode.Problems {
             // count char O(n)
             Dictionary<char, CharNode> dict = new Dictionary<char, CharNode>();
             for (int i = 0; i < s.Length; i++) {
-                if (!dict.ContainsKey(s[i])) { 
+                if (!dict.ContainsKey(s[i])) {
                     dict.Add(s[i], new CharNode(1, i));
                 }
                 else {
@@ -51,8 +45,8 @@ namespace Leetcode.Problems {
 
             // select unique char O(n)
             List<CharNode> uniqueChars = new List<CharNode>();
-            foreach (var item in dict) { 
-                if(item.Value.count == 1) {
+            foreach (var item in dict) {
+                if (item.Value.count == 1) {
                     uniqueChars.Add(item.Value);
                 }
             }
@@ -62,16 +56,16 @@ namespace Leetcode.Problems {
             // the first char O(n)
             int minIndex = uniqueChars[0].index;
             foreach (var item in uniqueChars) {
-                if (item.index < minIndex) { 
+                if (item.index < minIndex) {
                     minIndex = item.index;
                 }
             }
-            return minIndex;    
+            return minIndex;
         }
         public int FirstUniqChar3(string s) {
             var uniqueChars = s.Distinct();
             foreach (var ch in uniqueChars) {
-                if(s.Count(x => x == ch) == 1) {
+                if (s.Count(x => x == ch) == 1) {
                     return s.IndexOf(ch);
                 }
             }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P234_Palindrome_Linked_List {
         public class ListNode {
             public int val;
@@ -16,19 +10,19 @@ namespace Leetcode.Problems {
         }
         // space O(1), time O(n)
         public bool IsPalindrome(ListNode head) {
-            
+
             // reverse the second half of the list
-            if(head == null) return false;
+            if (head == null) return false;
             if (head.next == null) return true;
             ListNode fast = head;
             ListNode slow = head;
-            while(fast != null && fast.next != null) {
+            while (fast != null && fast.next != null) {
                 fast = fast.next.next;
                 slow = slow.next;
             }
             ListNode rear = Reverse(slow);
             ListNode front = head;
-            while(front != null && rear != null) {
+            while (front != null && rear != null) {
                 if (front.val != rear.val) {
                     return false;
                 }
@@ -37,12 +31,12 @@ namespace Leetcode.Problems {
             }
             return true;
         }
-        
+
         private ListNode Reverse(ListNode slow) {
             ListNode previous = null;
             ListNode current = slow;
             ListNode future = null;
-            while (current != null) { 
+            while (current != null) {
                 future = current.next;
                 current.next = previous;
                 previous = current;
@@ -50,6 +44,6 @@ namespace Leetcode.Problems {
             }
             return previous;
         }
-     
+
     }
 }

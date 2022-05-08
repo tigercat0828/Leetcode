@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
-    public  class P509_Fibonacci_Number {
+﻿namespace Leetcode.Problems {
+    public class P509_Fibonacci_Number {
         // iterative | space O(1), time O(n)
         public int Fib(int n) {
-            if(n==0 ||n ==1) return n;
+            if (n == 0 || n == 1) return n;
             int a = 0;
             int b = 1;
-            int c=0;
+            int c = 0;
             for (int i = 1; i < n; i++) {
                 c = a + b;
                 b = c;
@@ -30,10 +24,10 @@ namespace Leetcode.Problems {
         public int fib(int n) {
             if (n == 0 || n == 1) return memo[n];
             if (memo[n] != -1) return memo[n];
-            memo[n] = fib(n-1) + fib(n-2);
+            memo[n] = fib(n - 1) + fib(n - 2);
             return memo[n];
         }
-        
+
     }
 
 

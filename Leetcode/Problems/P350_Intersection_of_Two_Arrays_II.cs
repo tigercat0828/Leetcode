@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P350_Intersection_of_Two_Arrays_II {
         // O(nlogn)
         public int[] Intersect(int[] nums1, int[] nums2) {
-            Array.Sort(nums1);  
+            Array.Sort(nums1);
             Console.WriteLine(string.Join('-', nums1));
             Array.Sort(nums2);
             Console.WriteLine(string.Join('-', nums2));
@@ -16,8 +10,8 @@ namespace Leetcode.Problems {
             int i = 0;
             int j = 0;
             while (i < nums1.Length && j < nums2.Length) {
-                if (nums1[i] == nums1[j]) { 
-                    result.Add(nums1 [i]);
+                if (nums1[i] == nums1[j]) {
+                    result.Add(nums1[i]);
                     i++;
                     j++;
                 }

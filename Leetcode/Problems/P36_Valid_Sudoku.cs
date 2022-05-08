@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P36_Valid_Sudoku {
         // Each row must contain the digits 1-9 without repetition.
         // Each column must contain the digits 1-9 without repetition.
@@ -30,7 +24,7 @@ namespace Leetcode.Problems {
 
 
             Dictionary<char, int> dict = new Dictionary<char, int>();
-            
+
             for (int i = 0; i < 9; i++) {
                 char key = board[row][i];
                 if (dict.ContainsKey(key)) {

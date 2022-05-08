@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P21_Merge_Two_Sorted_Lists {
         public class ListNode {
             public int val;
@@ -20,16 +14,16 @@ namespace Leetcode.Problems {
             if (list2 == null) {
                 return list1;
             }
-            if(list1 == null) {
+            if (list1 == null) {
                 return list2;
             }
-        
+
             // dummy node for easy logic
             ListNode head = new ListNode(0);
             ListNode last = head;
 
-            while(list1 != null && list2 != null) {
-                if(list1.val <= list2.val) {
+            while (list1 != null && list2 != null) {
+                if (list1.val <= list2.val) {
                     last.next = new ListNode(list1.val, null);
                     list1 = list1.next;
                 }
@@ -40,10 +34,10 @@ namespace Leetcode.Problems {
                 last = last.next;
             }
             // add the remain node into list
-            if(list1 != null) {
+            if (list1 != null) {
                 last.next = list1;
             }
-            if(list2 != null) {
+            if (list2 != null) {
                 last.next = list2;
             }
             return head.next;

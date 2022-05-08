@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P88_Merge_Sorted_Array {
         public void Merge(int[] nums1, int m, int[] nums2, int n) {
             int[] temp = new int[m];

@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P566_Reshape_the_Matrix {
         public int[][] MatrixReshape(int[][] mat, int r, int c) {
             int row = mat.Length;
             int col = mat[0].Length;
-            if(row * col != r * c) {    // illegal
+            if (row * col != r * c) {    // illegal
                 return mat;
             }
             if (row == r && col == c) { // same dimension
@@ -17,7 +11,7 @@ namespace Leetcode.Problems {
             }
 
             int[][] result = new int[r][];
-            for (int i = 0; i < r; i++) { 
+            for (int i = 0; i < r; i++) {
                 result[i] = new int[c];
             }
             int index = 0;

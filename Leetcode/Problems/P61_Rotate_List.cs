@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P61_Rotate_List {
         public class ListNode {
             public int val;
@@ -15,7 +9,7 @@ namespace Leetcode.Problems {
             }
         }
         public ListNode RotateRight(ListNode head, int k) {
-            if(head == null) {      // zero node
+            if (head == null) {      // zero node
                 return null;
             }
             if (head.next == null) { // one node
@@ -29,7 +23,7 @@ namespace Leetcode.Problems {
                 tail = tail.next;
             }
             k = k % count;
-            if (k == 0)  return head; 
+            if (k == 0) return head;
             // make ring
             tail.next = head;
 

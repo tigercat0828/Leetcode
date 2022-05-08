@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Leetcode.Problems {
 
-namespace Leetcode.Problems {
-
-    public  class P430_Flatten_a_Multilevel_Doubly_Linked_List {
+    public class P430_Flatten_a_Multilevel_Doubly_Linked_List {
         public class Node {
             public int val;
             public Node prev;
             public Node next;
             public Node child;
         }
-        public Node Flatten( Node head) {
-            if(head == null) return null;
+        public Node Flatten(Node head) {
+            if (head == null) return null;
 
             Stack<Node> stack = new Stack<Node>();
             Node newHead = new Node();
@@ -22,7 +16,7 @@ namespace Leetcode.Problems {
 
             stack.Push(head);
             while (stack.Count > 0) {
-                Node pop = stack.Pop();  
+                Node pop = stack.Pop();
                 if (pop != null) {
                     // add to tail
                     Node node = new Node();

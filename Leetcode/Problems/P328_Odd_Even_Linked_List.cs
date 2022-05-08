@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
-    public  class P328_Odd_Even_Linked_List {
+﻿namespace Leetcode.Problems {
+    public class P328_Odd_Even_Linked_List {
 
         public class ListNode {
             public int val;
@@ -17,7 +11,7 @@ namespace Leetcode.Problems {
         }
 
         public ListNode OddEvenList(ListNode head) {
-            if(head == null || head.next == null || head.next == null) {
+            if (head == null || head.next == null || head.next == null) {
                 return null;
             }
             ListNode odd = head;
@@ -50,7 +44,7 @@ namespace Leetcode.Problems {
 
             int count = 0;
             while (count != nodeCount) {
-                if(count % 2 == 1) {
+                if (count % 2 == 1) {
                     last.next = new ListNode(current.val, null);
                     last = last.next;
                     previous.next = current.next;

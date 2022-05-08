@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
-    public  class P283_Move_Zeroes {
+﻿namespace Leetcode.Problems {
+    public class P283_Move_Zeroes {
         public void MoveZeroes(int[] nums) {
             int len = 0;
             for (int i = 0; i < nums.Length; i++) {

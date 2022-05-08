@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P232_Implement_Queue_using_Stacks {
         private Stack<int> stackQueue;
         private Stack<int> stackTmp;

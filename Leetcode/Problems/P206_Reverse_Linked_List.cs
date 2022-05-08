@@ -1,19 +1,14 @@
 ﻿using Leetcode.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Leetcode.Problems {
     public class P206_Reverse_Linked_List {
-       
+
         // iteration version
         public ListNode ReverseList(ListNode head) {
             ListNode current = head;
             ListNode previous = null;
             ListNode next = null;
-            while (current != null) { 
+            while (current != null) {
                 next = current.next;
                 current.next = previous;
                 previous = current;
@@ -24,7 +19,7 @@ namespace Leetcode.Problems {
         }
         // recursive
         public ListNode ReverseList2(ListNode node) {
-            if(node == null || node.next == null) {
+            if (node == null || node.next == null) {
                 return node;
             }
             ListNode last = ReverseList2(node.next);
@@ -36,7 +31,7 @@ namespace Leetcode.Problems {
 
         // use O(n) extra space
         public ListNode ReverseList3(ListNode head) {
-            if(head == null) {
+            if (head == null) {
                 return null;
             }
             List<int> tmp = new List<int>();

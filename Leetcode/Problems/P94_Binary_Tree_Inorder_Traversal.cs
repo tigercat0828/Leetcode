@@ -1,26 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Leetcode.Common;
+﻿using Leetcode.Common;
 
 
-namespace Leetcode {
+namespace Leetcode.Problems {
     public class P94_Binary_Tree_Inorder_Traversal {
-        public class TreeNode {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null) {
-                this.val = val;
-                this.left = left;
-                this.right = right;
-            }
-        }
+
         // iterative 
-        public IList<int> InorderTraversal(TreeNode root) { 
-            if(root == null) {
+        public IList<int> InorderTraversal(TreeNode root) {
+            if (root == null) {
                 return new List<int>();
             }
             List<int> result = new List<int>();

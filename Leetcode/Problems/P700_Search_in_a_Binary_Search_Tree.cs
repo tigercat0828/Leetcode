@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Leetcode.Common;
+﻿using Leetcode.Common;
 namespace Leetcode.Problems {
     public class P700_Search_in_a_Binary_Search_Tree {
 
@@ -12,15 +7,15 @@ namespace Leetcode.Problems {
             if (root == null) return null;
             TreeNode current = root;
             while (current != null) {
-                if (val > current.val ) { 
+                if (val > current.val) {
                     current = current.right;
                     continue;
                 }
-                if (val < current.val  ) {
+                if (val < current.val) {
                     current = current.left;
                     continue;
                 }
-                if(current.val == val) {
+                if (current.val == val) {
                     return current;
                 }
             }

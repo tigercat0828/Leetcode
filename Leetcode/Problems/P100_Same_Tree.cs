@@ -1,21 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Leetcode.Common;
+﻿using Leetcode.Common;
 namespace Leetcode.Problems {
     public class P100_Same_Tree {
-        public class TreeNode {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null) {
-                this.val = val;
-                this.left = left;
-                this.right = right;
-            }
-        }
+
         //recursion
         public bool IsSameTree(TreeNode p, TreeNode q) {
             // p and q are empty tree
@@ -48,12 +34,12 @@ namespace Leetcode.Problems {
                 TreeNode nodeP = queueP.Dequeue();
                 TreeNode nodeQ = queueQ.Dequeue();
 
-                
-                if (nodeP == null||nodeQ == null ) return false;
-                
-                if (nodeP.val != nodeQ.val ) return false;
 
-                if(nodeP.left != null || nodeQ.left != null) {
+                if (nodeP == null || nodeQ == null) return false;
+
+                if (nodeP.val != nodeQ.val) return false;
+
+                if (nodeP.left != null || nodeQ.left != null) {
                     queueP.Enqueue(nodeP.left);
                     queueQ.Enqueue(nodeQ.left);
                 }

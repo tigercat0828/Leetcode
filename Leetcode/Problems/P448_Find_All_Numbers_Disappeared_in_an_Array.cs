@@ -1,23 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P448_Find_All_Numbers_Disappeared_in_an_Array {
         //no external space 
         public IList<int> FindDisappearedNumbers(int[] nums) {
 
             List<int> result = new List<int>();
-            for (int i = 0; i < nums.Length; i++) { 
-                int index = Math.Abs(nums[i]) -1;
-                if(nums[index] > 0) {
+            for (int i = 0; i < nums.Length; i++) {
+                int index = Math.Abs(nums[i]) - 1;
+                if (nums[index] > 0) {
                     nums[index] *= -1;
                 }
             }
             for (int i = 0; i < nums.Length; i++) {
-                if(nums[i] > 0) {   // not processed
+                if (nums[i] > 0) {   // not processed
                     result.Add(i + 1);
                 }
             }

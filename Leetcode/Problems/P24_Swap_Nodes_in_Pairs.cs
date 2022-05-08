@@ -1,13 +1,8 @@
 ﻿using Leetcode.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Leetcode.Problems {
     public class P24_Swap_Nodes_in_Pairs {
-        
+
         // iterative
         public ListNode SwapPairs(ListNode head) {
             if (head == null || head.next == null) {
@@ -15,7 +10,7 @@ namespace Leetcode.Problems {
             }
             ListNode dummy = new ListNode(0, head);
             ListNode current = dummy;
-            while(current.next != null && current.next.next != null) {
+            while (current.next != null && current.next.next != null) {
                 ListNode A = current.next;
                 ListNode B = current.next.next;
                 current.next = B;

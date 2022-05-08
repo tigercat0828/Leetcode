@@ -1,36 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Leetcode.Common;
 
 namespace Leetcode.Problems {
     public class P145_Binary_Tree_Postorder_Traversal {
-        public class TreeNode {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null) {
-                this.val = val;
-                this.left = left;
-                this.right = right;
-            }
-        }
         // iterative
         public IList<int> PostorderTraversal(TreeNode root) {
-            if(root == null) {
+            if (root == null) {
                 return new List<int>();
             }
             List<int> result = new();
             Stack<TreeNode> stack = new();
             stack.Push(root);
-            while(stack.Count > 0) {
+            while (stack.Count > 0) {
                 TreeNode node = stack.Pop();
                 result.Add(node.val);
-                if (node.left != null) { 
+                if (node.left != null) {
                     stack.Push(node.left);
                 }
-                if (node.right != null) { 
+                if (node.right != null) {
                     stack.Push(node.right);
                 }
             }

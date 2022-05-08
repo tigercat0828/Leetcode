@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P50_Pow_x_n {
-        Dictionary<int, double> memo = new Dictionary<int, double>();  
+        Dictionary<int, double> memo = new Dictionary<int, double>();
         public double MyPow(double x, int n) {
             memo = new Dictionary<int, double>();
             memo[0] = 1;
@@ -20,13 +14,13 @@ namespace Leetcode.Problems {
         }
 
         public double helper(double x, int n) {
-            
-            if(memo.ContainsKey(n)) return memo[n];
+
+            if (memo.ContainsKey(n)) return memo[n];
             if (n % 2 == 0) {
                 memo[n] = helper(x, n / 2) * helper(x, n / 2);
             }
-            else { 
-                memo[n] =  helper(x, n / 2) * helper(x, n / 2) * x;
+            else {
+                memo[n] = helper(x, n / 2) * helper(x, n / 2) * x;
             }
             return memo[n];
         }

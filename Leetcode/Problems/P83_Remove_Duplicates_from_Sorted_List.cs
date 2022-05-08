@@ -1,9 +1,4 @@
 ﻿using Leetcode.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Leetcode.Problems {
     public class P83_Remove_Duplicates_from_Sorted_List {

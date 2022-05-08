@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P704_Binary_Search {
         public int Search(int[] nums, int target) {
             return search(nums, target, 0, nums.Length - 1);

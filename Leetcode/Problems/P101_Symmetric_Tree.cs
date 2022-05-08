@@ -1,21 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Leetcode.Common;
+﻿using Leetcode.Common;
 namespace Leetcode.Problems {
     public class P101_Symmetric_Tree {
-        public class TreeNode {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null) {
-                this.val = val;
-                this.left = left;
-                this.right = right;
-            }
-        }
+
         public bool IsSymmetric(TreeNode root) {
             Queue<TreeNode> queue = new Queue<TreeNode>();
 
@@ -24,7 +10,7 @@ namespace Leetcode.Problems {
             while (queue.Count > 0) {
                 TreeNode left = queue.Dequeue();
                 TreeNode right = queue.Dequeue();
-                if(left == null && right == null) {
+                if (left == null && right == null) {
                     continue;
                 }
                 if ((left == null && right != null) ||
@@ -41,7 +27,7 @@ namespace Leetcode.Problems {
             }
             return true;
         }
-        public bool IsSymmetric2(TreeNode root) { 
+        public bool IsSymmetric2(TreeNode root) {
             return recurive(root.left, root.right);
         }
 
@@ -58,7 +44,7 @@ namespace Leetcode.Problems {
             }
             return recurive(left.left, right.right) && recurive(left.right, right.left);
         }
-        
+
     }
 
 }

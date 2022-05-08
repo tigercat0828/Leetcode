@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     // MyLinkedList
     public class P707_Design_Linked_List {
         class Node {
@@ -24,7 +18,7 @@ namespace Leetcode.Problems {
         }
 
         public int Get(int index) {
-            if(head == null || index < 0 || index >= count) {
+            if (head == null || index < 0 || index >= count) {
                 return -1;
             }
             Node current = head;
@@ -41,7 +35,7 @@ namespace Leetcode.Problems {
         }
 
         public void AddAtTail(int val) {
-            if(head == null) {
+            if (head == null) {
                 head = new Node(val, null);
                 count++;
                 return;
@@ -61,13 +55,13 @@ namespace Leetcode.Problems {
             if (index < 0 || index > count) {
                 return;
             }
-            if(index == 0 || head == null) {
+            if (index == 0 || head == null) {
                 AddAtHead(val);
                 return;
             }
 
             Node current = head;
-            for (int i = 0; i < index-1; i++) {
+            for (int i = 0; i < index - 1; i++) {
                 current = current.next;
             }
             Node node = new Node(val, current.next);
@@ -79,7 +73,7 @@ namespace Leetcode.Problems {
             if (head == null || index < 0 || index >= count) {
                 return;
             }
-            if(index == 0) {
+            if (index == 0) {
                 head = head.next;
                 count--;
                 return;
@@ -88,7 +82,7 @@ namespace Leetcode.Problems {
             Node previous = current;
             for (int i = 0; i < index; i++) {
                 previous = current;
-                current = current.next;    
+                current = current.next;
             }
             previous.next = current.next;
             count--;
