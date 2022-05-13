@@ -1,14 +1,8 @@
-﻿namespace Leetcode.Problems {
-    public class P2_Add_Two_Numbers {
-        public class ListNode {
-            public int val;
-            public ListNode next;
-            public ListNode(int val = 0, ListNode next = null) {
-                this.val = val;
-                this.next = next;
-            }
+﻿using Leetcode.Common;
 
-        }
+namespace Leetcode.Problems {
+    public class P2_Add_Two_Numbers {
+
         public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
             // dummy node
             ListNode head = new ListNode(0);

@@ -1,14 +1,8 @@
-﻿namespace Leetcode.Problems {
+﻿using Leetcode.Common;
+
+namespace Leetcode.Problems {
     public class P19_Remove_Nth_Node_From_End_of_List {
 
-        public class ListNode {
-            public int val;
-            public ListNode next;
-            public ListNode(int val = 0, ListNode next = null) {
-                this.val = val;
-                this.next = next;
-            }
-        }
         public ListNode RemoveNthFromEnd(ListNode head, int n) {
             ListNode fast = head;
             for (int i = 0; i < n; i++) {

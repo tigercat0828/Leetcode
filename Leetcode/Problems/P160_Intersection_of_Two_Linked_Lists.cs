@@ -1,10 +1,7 @@
-﻿namespace Leetcode.Problems {
+﻿using Leetcode.Common;
+
+namespace Leetcode.Problems {
     public class P160_Intersection_of_Two_Linked_Lists {
-        public class ListNode {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
-        }
 
         // O(lenA + lenB)
         public ListNode GetIntersectionNode(ListNode headA, ListNode headB) {

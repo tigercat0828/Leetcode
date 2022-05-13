@@ -1,4 +1,6 @@
-﻿namespace Leetcode.Problems {
+﻿using Leetcode.Common;
+
+namespace Leetcode.Problems {
 
     /*
     fast = 2 * slow     
@@ -10,14 +12,7 @@
                     c|-------X
     */
     public class P142_Linked_List_Cycle_II {
-        public class ListNode {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) {
-                val = x;
-                next = null;
-            }
-        }
+ 
         public ListNode DetectCycle(ListNode head) {
             ListNode meet = FindMeetNode(head);
             if (meet == null) {
