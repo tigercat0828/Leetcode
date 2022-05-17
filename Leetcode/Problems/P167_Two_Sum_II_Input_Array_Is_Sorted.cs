@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P167_Two_Sum_II_Input_Array_Is_Sorted {
         // O(n) two pointer
         public int[] TwoSum(int[] numbers, int target) {

@@ -12,7 +12,7 @@ namespace Leetcode.Problems {
                     c|-------X
     */
     public class P142_Linked_List_Cycle_II {
- 
+
         public ListNode DetectCycle(ListNode head) {
             ListNode meet = FindMeetNode(head);
             if (meet == null) {

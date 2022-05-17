@@ -1,9 +1,4 @@
 ﻿using Leetcode.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Leetcode.Problems {
 
@@ -11,7 +6,7 @@ namespace Leetcode.Problems {
     public class P1302_Deepest_Leaves_Sum {
         public int DeepestLeavesSum(TreeNode root) {
 
-            if(root == null) return 0;
+            if (root == null) return 0;
 
             int sum = 0;
             Queue<TreeNode> queue = new Queue<TreeNode>();
@@ -23,14 +18,14 @@ namespace Leetcode.Problems {
                     TreeNode pop = queue.Dequeue();
                     sum += pop.val;
 
-                    if (pop.left != null) { 
+                    if (pop.left != null) {
                         queue.Enqueue(pop.left);
                     }
-                    if (pop.right != null) { 
+                    if (pop.right != null) {
                         queue.Enqueue(pop.right);
                     }
                 }
-                
+
             }
             return sum;
         }

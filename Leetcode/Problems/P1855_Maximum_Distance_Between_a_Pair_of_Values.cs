@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
-    public  class P1855_Maximum_Distance_Between_a_Pair_of_Values {
+﻿namespace Leetcode.Problems {
+    public class P1855_Maximum_Distance_Between_a_Pair_of_Values {
         // O(n^2) Brute force TLE
         public int MaxDistance3(int[] nums1, int[] nums2) {
             int maxDistance = 0;
