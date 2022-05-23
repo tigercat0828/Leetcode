@@ -9,10 +9,8 @@ namespace Leetcode.Problems {
         public int HammingWeight(uint n) {
             int count = 0;
             while (n > 0) {
-                if (n % 10 == 1) {
-                    count++;
-                }
-                n /= 10;
+                count += (int)(n & 1);
+                n = n >> 1;
             }
             return count;
         }

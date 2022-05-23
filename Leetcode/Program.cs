@@ -1,11 +1,7 @@
 ﻿using Leetcode.Common;
 using Leetcode.Problems;
-int col = 5;
-
-
-
-int[] vs = new int[] { 6,1,2,4,6,3,7,2,8,9};
-Array.Sort(vs, (a,b)=>b.CompareTo(a));
-Console.WriteLine(string.Join(',', vs));
-Utility.GenerateProblemString();
-
+P474_Ones_and_Zeroes problem = new P474_Ones_and_Zeroes();
+problem.FindMaxForm(
+    new string[] { "10", "0001", "111001", "1", "0" },
+    5, 3
+);
