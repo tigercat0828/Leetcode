@@ -1,7 +1,18 @@
 ﻿using Leetcode.Common;
 using Leetcode.Problems;
-P474_Ones_and_Zeroes problem = new P474_Ones_and_Zeroes();
-problem.FindMaxForm(
-    new string[] { "10", "0001", "111001", "1", "0" },
-    5, 3
-);
+
+Utility.GenerateProblemString();
+
+public class Solution {
+    public int MaxDepth(TreeNode root) {
+        if(root == null) return 0;
+        if(root.left == null && root.right == null) return 1;
+        int left = MaxDepth(root.left);
+        int right = MaxDepth(root.right);
+        return Math.Max(left, right) + 1;
+    }
+}
+
+
+
+
