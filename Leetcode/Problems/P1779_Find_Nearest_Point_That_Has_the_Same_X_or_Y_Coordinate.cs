@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     // O(n)
     public class P1779_Find_Nearest_Point_That_Has_the_Same_X_or_Y_Coordinate {
         public int NearestValidPoint(int x, int y, int[][] points) {
@@ -13,7 +7,7 @@ namespace Leetcode.Problems {
             for (int i = 0; i < points.Length; i++) {
                 int tx = points[i][0];
                 int ty = points[i][1];
-                if(x == tx && Math.Abs(y-ty) < min) {
+                if (x == tx && Math.Abs(y - ty) < min) {
                     min = Math.Abs(y - ty);
                     index = i;
                 }

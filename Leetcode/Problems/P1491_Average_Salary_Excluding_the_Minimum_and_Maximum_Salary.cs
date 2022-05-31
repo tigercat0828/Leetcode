@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P1491_Average_Salary_Excluding_the_Minimum_and_Maximum_Salary {
         public double Average(int[] salary) {
             double sum = 0;

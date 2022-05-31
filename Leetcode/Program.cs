@@ -1,18 +1,45 @@
 ﻿using Leetcode.Common;
-using Leetcode.Problems;
+
+Console.WriteLine('9' - '0');
 
 Utility.GenerateProblemString();
 
-public class Solution {
-    public int MaxDepth(TreeNode root) {
-        if(root == null) return 0;
-        if(root.left == null && root.right == null) return 1;
-        int left = MaxDepth(root.left);
-        int right = MaxDepth(root.right);
-        return Math.Max(left, right) + 1;
+public class MyQueue {
+
+    Stack<int> stack;
+    Stack<int> tmp;
+    public MyQueue() {
+        stack = new Stack<int>();
+        tmp = new Stack<int>();
+    }
+
+    public void Push(int x) {
+        stack.Push(x);
+    }
+
+    public int Pop() {
+        while (stack.Count > 0) {
+            tmp.Push(stack.Pop());
+        }
+        int pop = tmp.Pop();
+        while (tmp.Count > 0) {
+            stack.Push(tmp.Pop());
+        }
+        return pop;
+    }
+
+    public int Peek() {
+        while (stack.Count > 0) {
+            tmp.Push(stack.Pop());
+        }
+        int peek = tmp.Peek();
+        while (tmp.Count > 0) {
+            stack.Push(tmp.Pop());
+        }
+        return peek;
+    }
+
+    public bool Empty() {
+        return stack.Count == 0;
     }
 }
-
-
-
-

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     internal class P1572_Matrix_Diagonal_Sum {
 
         // o(n)
@@ -15,10 +9,10 @@ namespace Leetcode.Problems {
                 sum += mat[i][i];
             }
             for (int i = 0; i < n; i++) {
-                sum += mat[i][n - i -1];
+                sum += mat[i][n - i - 1];
             }
             // minus the duplicate mid term
-            if(n %2== 1) {
+            if (n % 2 == 1) {
                 int m = n / 2;
                 sum -= mat[m][m];
             }

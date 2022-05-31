@@ -8,7 +8,7 @@
                 for (int j = 0; j < banks; j++) {
                     customer += accounts[i][j];
                 }
-                if (customer > maxCustomer) { 
+                if (customer > maxCustomer) {
                     maxCustomer = customer;
                 }
             }

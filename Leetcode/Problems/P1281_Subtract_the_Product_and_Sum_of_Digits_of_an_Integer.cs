@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P1281_Subtract_the_Product_and_Sum_of_Digits_of_an_Integer {
         public int SubtractProductAndSum(int n) {
             int product = 1;
-            int sum = 0;    
+            int sum = 0;
             List<int> digits = ToDigits(n);
             foreach (var d in digits) {
                 product *= d;
@@ -16,7 +10,7 @@ namespace Leetcode.Problems {
             }
             return product - sum;
 
-            
+
         }
         List<int> ToDigits(int n) {
             List<int> digits = new List<int>();

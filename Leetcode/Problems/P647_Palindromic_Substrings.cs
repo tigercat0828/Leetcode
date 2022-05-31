@@ -6,7 +6,7 @@ namespace Leetcode.Problems {
             int row = s.Length;
             int col = s.Length;
             int[][] matrix = new int[row][];
-            for (int i = 0; i < row; i++) { 
+            for (int i = 0; i < row; i++) {
                 matrix[i] = new int[col];
             }
 

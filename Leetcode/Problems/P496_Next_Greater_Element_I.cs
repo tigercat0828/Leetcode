@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P496_Next_Greater_Element_I {
         public int[] NextGreaterElement(int[] nums1, int[] nums2) {
             // O(n) monotonic stack : value in stack should be increasing or decreasing

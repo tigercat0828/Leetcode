@@ -6,7 +6,7 @@ namespace Leetcode.Problems {
         public int GetDecimalValue(ListNode head) {
             int result = 0;
             ListNode current = head;
-            while(current != null) {
+            while (current != null) {
                 result <<= 1;
                 result |= current.val;
                 current = current.next;
@@ -18,7 +18,7 @@ namespace Leetcode.Problems {
         public int GetDecimalValue2(ListNode head) {
             List<int> bits = new List<int>();
             ListNode current = head;
-            while(current != null) {
+            while (current != null) {
                 bits.Add(current.val);
                 current = current.next;
             }

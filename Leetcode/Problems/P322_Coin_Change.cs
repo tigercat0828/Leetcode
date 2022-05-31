@@ -4,15 +4,15 @@
         public int CoinChange(int[] coins, int amount) {
             Queue<Node> queue = new Queue<Node>();
             bool[] dict = new bool[10001];
-            queue.Enqueue(new Node(amount, 0 ));
+            queue.Enqueue(new Node(amount, 0));
             dict[amount] = true;
-            while (queue.Count > 0) { 
+            while (queue.Count > 0) {
                 Node pop = queue.Dequeue();
                 if (pop.remain == 0) return pop.level;
                 foreach (var coin in coins.Reverse()) {
                     int possible = pop.remain - coin;
                     if (possible >= 0 && !dict[possible]) {
-                        queue.Enqueue(new Node(possible , pop.level + 1));
+                        queue.Enqueue(new Node(possible, pop.level + 1));
                         dict[possible] = true;
                     }
                 }

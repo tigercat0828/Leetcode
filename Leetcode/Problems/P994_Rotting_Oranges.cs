@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P994_Rotting_Oranges {
         Vec2[] dirs = new Vec2[] {
             new Vec2(0,1),
@@ -95,7 +89,7 @@ namespace Leetcode.Problems {
             return true;
         }
 
-        
+
         void PrintOranges(int[][] mat) {
             for (int i = 0; i < mat.Length; i++) {
                 Console.WriteLine("[" + String.Join(',', mat[i]) + "]");

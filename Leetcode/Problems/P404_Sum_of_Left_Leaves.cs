@@ -1,9 +1,4 @@
 ﻿using Leetcode.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Leetcode.Problems {
     public class P404_Sum_of_Left_Leaves {
@@ -21,10 +16,10 @@ namespace Leetcode.Problems {
             int sum = 0;
             Stack<Node> stack = new Stack<Node>();
             stack.Push(new Node(root, false));
-            while (stack.Count > 0) { 
+            while (stack.Count > 0) {
                 Node node = stack.Pop();
-                if(node.treeNode.left == null && node.treeNode.right == null ) {
-                    if(node.isLeft) {
+                if (node.treeNode.left == null && node.treeNode.right == null) {
+                    if (node.isLeft) {
                         sum += node.treeNode.val;
                     }
                     continue;
@@ -32,7 +27,7 @@ namespace Leetcode.Problems {
                 if (node.treeNode.left != null) {
                     stack.Push(new Node(node.treeNode.left, true));
                 }
-                if(node.treeNode.right != null) {
+                if (node.treeNode.right != null) {
                     stack.Push(new Node(node.treeNode.right, false));
                 }
             }
@@ -44,9 +39,9 @@ namespace Leetcode.Problems {
         }
         private int helper(TreeNode root, bool isLeft) {
             if (root == null) return 0;
-            if(isLeft && root.left == null && root.right == null) return root.val;
-            return helper(root.left, true)+ helper(root.right, false);
+            if (isLeft && root.left == null && root.right == null) return root.val;
+            return helper(root.left, true) + helper(root.right, false);
         }
-      
+
     }
 }

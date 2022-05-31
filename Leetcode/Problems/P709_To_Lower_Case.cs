@@ -7,7 +7,7 @@
                     res += (char)(s[i] + 32);
                 else
                     res += s[i];
-                    
+
             }
             return res;
         }
