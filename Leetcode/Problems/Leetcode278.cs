@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.Problems {
-    public class P278_First_Bad_Version {
+    public class Leetcode278 {
         public int FirstBadVersion(int n) {
             if (n <= 0) {
                 return -2; // Input error;
@@ -22,6 +22,8 @@
             if (IsBadVersion(left)) return left;
             return -1; // No bad version
         }
+
+        //=====================================
         int bad;
         private bool IsBadVersion(int n) {
             return bad == n;

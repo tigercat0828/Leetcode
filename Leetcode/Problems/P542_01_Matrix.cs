@@ -21,11 +21,11 @@
             for (int i = row - 1; i >= 0; i--) {
                 for (int j = col - 1; j >= 0; j--) {
                     if (mat[i][j] == 0) continue;
-                    int but = UNDEF;
+                    int buttom = UNDEF;
                     int left = UNDEF;
-                    if (IsValid(i + 1, j)) but = mat[i + 1][j];
+                    if (IsValid(i + 1, j)) buttom = mat[i + 1][j];
                     if (IsValid(i, j + 1)) left = mat[i][j + 1];
-                    mat[i][j] = Math.Min(mat[i][j], Math.Min(left, but) + 1);
+                    mat[i][j] = Math.Min(mat[i][j], Math.Min(left, buttom) + 1);
                 }
             }
             return mat;

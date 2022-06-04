@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.Problems {
-    public class P704_Binary_Search {
+    public class Leetcode704 {
         public int Search(int[] nums, int target) {
             return search(nums, target, 0, nums.Length - 1);
         }

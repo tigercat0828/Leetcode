@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.Problems {
-    public class P70_Climbing_Stairs {
+    public class Leetcode70 {
         // iterative
         public int ClimbStairs(int n) {
             if (n <= 3) return n;

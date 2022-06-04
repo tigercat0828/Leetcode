@@ -1,45 +1,20 @@
 ﻿namespace Leetcode.Problems {
-    public class Node {
-        public int val;
-        public Node left;
-        public Node right;
-        public Node next;
 
-        public Node() { }
+    public class Leetcode116 {
 
-        public Node(int _val) {
-            val = _val;
-        }
-
-        public Node(int _val, Node _left, Node _right, Node _next) {
-            val = _val;
-            left = _left;
-            right = _right;
-            next = _next;
-        }
-    }
-
-    public class P116_Populating_Next_Right_Pointers_in_Each_Node {
-        public Node Connect(Node root) {
-            // corner case
-            if (root == null) return null;
-            connect(root);
-            return root;
-        }
         // recursive
-        public void connect(Node root) {
-            if (root.left != null && root.right != null) {
-                // connect brother
-                root.left.next = root.right;
-                // connect cousin
-
-                if (root.next != null) {
+        public Node Connect(Node root) {
+            if (root != null) {
+                if (root.left != null) {
+                    root.left.next = root.right;
+                }
+                if (root.right != null && root.next != null) {
                     root.right.next = root.next.left;
                 }
-
                 Connect(root.left);
                 Connect(root.right);
             }
+            return root;
         }
         // iterative
         // Time O(n) levelOrder Traversal
@@ -70,6 +45,25 @@
                 }
             }
             return root;
+        }
+        public class Node {
+            public int val;
+            public Node left;
+            public Node right;
+            public Node next;
+
+            public Node() { }
+
+            public Node(int _val) {
+                val = _val;
+            }
+
+            public Node(int _val, Node _left, Node _right, Node _next) {
+                val = _val;
+                left = _left;
+                right = _right;
+                next = _next;
+            }
         }
     }
 }

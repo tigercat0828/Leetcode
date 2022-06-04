@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.Problems {
-    public class P35_Search_Insert_Position {
+    public class Leetcode35 {
         // O(logn)
         public int SearchInsert(int[] nums, int target) {
             if (target > nums[nums.Length - 1]) return nums.Length;

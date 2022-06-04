@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.Problems {
-    public class P977_Squares_of_a_Sorted_Array {
+    public class Leetcode977 {
         // O(n)
         public int[] SortedSquares(int[] nums) {
             int[] ans = new int[nums.Length];
