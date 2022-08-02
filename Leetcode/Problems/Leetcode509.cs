@@ -1,7 +1,7 @@
 ﻿namespace Leetcode.Problems {
-    public class P509_Fibonacci_Number {
+    public class Leetcode509 {
         // iterative | space O(1), time O(n)
-        public int Fib(int n) {
+        public int Fib2(int n) {
             if (n == 0 || n == 1) return n;
             int a = 0;
             int b = 1;
@@ -15,7 +15,7 @@
         }
         // recursion with memory space | space O(n), time O(1)
         int[] memo = new int[31];
-        public int Fib2(int n) {
+        public int Fib(int n) {
             Array.Fill(memo, -1);
             memo[0] = 0;
             memo[1] = 1;
@@ -27,8 +27,5 @@
             memo[n] = fib(n - 1) + fib(n - 2);
             return memo[n];
         }
-
     }
-
-
 }

@@ -1,4 +1,6 @@
-﻿namespace Leetcode.Problems {
+﻿//Range Sum Query 2D - Immutable
+
+namespace Leetcode.Problems {
     public class Leetcode304 {
         class NumMatrix {
             int[][] prefixSum;

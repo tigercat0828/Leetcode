@@ -3,6 +3,9 @@
 using Leetcode.Problems;
 
 
-Leetcode51 leetcode = new Leetcode51();
+Leetcode740 leetcode = new ();
 
-leetcode.SolveNQueens(4);
+
+int[] nums = new int[]{ 2, 2, 3, 3, 3, 4 };
+Console.WriteLine (leetcode.DeleteAndEarn(nums));
+

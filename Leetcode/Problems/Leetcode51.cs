@@ -22,13 +22,13 @@ namespace Leetcode.Problems {
                     board[r][c] = '.';
                 }
             }
-            
+
             FindPossible(0, n);
 
             return result;
         }
         private void SetQueen(int r, int c, int n, bool putQueen) {
-            board[r][c] =  putQueen ? 'Q':'.';
+            board[r][c] = putQueen ? 'Q' : '.';
             cols[c] = putQueen;
             diag1[r + c] = putQueen;
             diag2[r - c + n - 1] = putQueen;
@@ -40,8 +40,8 @@ namespace Leetcode.Problems {
             // try every col;
             for (int c = 0; c < n; c++) {
                 if (!IsValid(r, c, n)) continue;
-                SetQueen(r, c, n,true);
-                FindPossible(r+1,n);
+                SetQueen(r, c, n, true);
+                FindPossible(r + 1, n);
                 SetQueen(r, c, n, false);
             }
         }
@@ -52,7 +52,7 @@ namespace Leetcode.Problems {
             return true;
         }
         private List<string> ToListString(char[][] board) {
-            List<string> boardStr = new List<string>() ;
+            List<string> boardStr = new List<string>();
             foreach (var row in board) {
                 boardStr.Add(string.Join("", row));
             }

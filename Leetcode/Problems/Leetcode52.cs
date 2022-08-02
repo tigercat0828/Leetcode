@@ -19,12 +19,12 @@
         }
         void FindPossible(int r) {
             if (r == size) {
-                ansCount++;    
+                ansCount++;
             }
             // try every column
             for (int c = 0; c < size; c++) {
                 if (!IsValid(r, c)) continue;
-                SetQueen(r , c, true);
+                SetQueen(r, c, true);
                 FindPossible(r + 1);
                 SetQueen(r, c, false);
             }

@@ -1,7 +1,7 @@
-﻿using Leetcode.Common;
+﻿// Sysmmetric Tree
+using Leetcode.Common;
 namespace Leetcode.Problems {
-    public class P101_Symmetric_Tree {
-
+    public class Leetcode101 {
         public bool IsSymmetric(TreeNode root) {
             Queue<TreeNode> queue = new Queue<TreeNode>();
 
