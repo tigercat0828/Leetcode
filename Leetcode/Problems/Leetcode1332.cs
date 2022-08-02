@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-﻿namespace Leetcode.Problems {
-    internal class Leetcode1332 {
-=======
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +18,6 @@ namespace Leetcode.Problems {
             }
             return 1;   // is paliondrome
         }
->>>>>>> Stashed changes
     }
 }
 /*
