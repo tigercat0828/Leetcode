@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.Problems {
-    public class P3_Longest_Substring_Without_Repeating_Characters {
+    public class Leetcode3 {
         // time O(n)
         // space O(256) = O(1)
         public int LengthOfLongestSubstring(string s) {
