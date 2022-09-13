@@ -1,5 +1,9 @@
 ﻿namespace Leetcode.Problems {
     public class Leetcode70 {
+        // F[n]=F[n-1]+F[n-2]
+        // 因為一次可以爬1、2 step,
+        // 所以到達第n階的前一步可能是n-1階、n-2階
+        // => 到n階的方法數 = n-1階方法數 + n-2階方法數
         // iterative
         public int ClimbStairs(int n) {
             if (n <= 3) return n;
@@ -13,7 +17,7 @@
             }
             return C;
         }
-        // recursive with memo
+        // DP bottom-up recursive with memo
         int[] memo = new int[46];
         public int ClimbStarirs2(int n) {
             Array.Fill(memo, -1);
