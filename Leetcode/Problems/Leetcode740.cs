@@ -1,27 +1,26 @@
 ﻿// Delete and Earn 
 namespace Leetcode.Problems {
     public class Leetcode740 {
-
-        int[] memo;
-        int[] price;
         public int DeleteAndEarn(int[] nums) {
-            // counting
+            // think like house robber
+            int maximum = nums.Max();
 
-            price = new int[nums.Last() + 1];
-            memo = new int[nums.Last()+1];
-            Array.Fill(memo, -1);
-            // turn into 198 House Robber
-            for (int i = 0; i < nums.Length; i++) {
-                price[nums[i]] += nums[i] ;
+            int[] prices = new int[maximum+1];
+
+            for (int i = 0; i < nums.Length; i++) { 
+                prices[nums[i]] += nums[i]; 
             }
-            
-            return DP(nums.Last());
-        }
-        private int DP(int i) {
-            if(i<0) return 0;
-            if(memo[i] != -1) return memo[i];
-            memo[i] = Math.Max(DP(i - 1), DP(i - 2) + price[i]);
-            return memo[i];
+            int[] DP = new int[maximum + 1];
+            DP[0] = prices[0];
+            DP[1] = Math.Max(prices[0], prices[1]);
+            for (int i = 2; i <= maximum; i++) {
+                DP[i] = Math.Max(
+                    DP[i - 1],
+                    DP[i - 2] + prices[i]);
+            }
+            return DP[maximum];
         }
     }
+
+}
 }
