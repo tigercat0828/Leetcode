@@ -5,10 +5,10 @@ namespace Leetcode.Problems {
             // think like house robber
             int maximum = nums.Max();
 
-            int[] prices = new int[maximum+1];
+            int[] prices = new int[maximum + 1];
 
-            for (int i = 0; i < nums.Length; i++) { 
-                prices[nums[i]] += nums[i]; 
+            for (int i = 0; i < nums.Length; i++) {
+                prices[nums[i]] += nums[i];
             }
             int[] DP = new int[maximum + 1];
             DP[0] = prices[0];
@@ -23,4 +23,4 @@ namespace Leetcode.Problems {
     }
 
 }
-}
+

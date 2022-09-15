@@ -1,30 +1,4 @@
-﻿
-using Leetcode.Problems;
-Leetcode968 Leetcode = new Leetcode968();
-TreeNode root = new TreeNode();
-root.right = new TreeNode();
-root.left = new TreeNode();
-
-
-Leetcode.MinCameraCover(root);
-
-
-
-
-public class TreeNode {
-    public int val;
-    public TreeNode left;
-    public TreeNode right;
-    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
-
-Leetcode740 leetcode = new ();
-
-
-int[] nums = new int[]{ 2, 2, 3, 3, 3, 4 };
-Console.WriteLine (leetcode.DeleteAndEarn(nums));
-
+﻿using Leetcode.Problems;
+Leetcode45 leet = new();
+//Console.WriteLine(leet.Jump(new int[] {2,3,1,1,4 }));
+Console.WriteLine(leet.Jump(new int[] { 8, 2, 4, 4, 4, 9, 5, 2, 5, 8, 8, 0, 8, 6, 9, 1, 1, 6, 3, 5, 1, 2, 6, 6, 0, 4, 8, 6, 0, 3, 2, 8, 7, 6, 5, 1, 7, 0, 3, 4, 8, 3, 5, 9, 0, 4, 0, 1, 0, 5, 9, 2, 0, 7, 0, 2, 1, 0, 8, 2, 5, 1, 2, 3, 9, 7, 4, 7, 0, 0, 1, 8, 5, 6, 7, 5, 1, 9, 9, 3, 5, 0, 7, 5 }));
