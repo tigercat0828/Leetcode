@@ -1,14 +1,12 @@
 ﻿namespace Leetcode.Common {
     public static class Utility {
-        public static string GenerateProblemString() {
-            string problemString = Console.ReadLine();
-            string[] tokens = problemString.Split(' ');
-            tokens[0] = tokens[0].Remove(tokens[0].Length - 1);
-
-            string className = "P" + string.Join('_', tokens);
-            Console.WriteLine(className);
-            return className;
+        public static int[] RandomIntegerArray(int count, int min, int max) {
+            int[] array = new int[count];
+            Random random = new Random();
+            for (int i = 0; i < count; i++) {
+                array[i] = random.Next(min, max+1);
+            }
+            return array;
         }
-
     }
 }
