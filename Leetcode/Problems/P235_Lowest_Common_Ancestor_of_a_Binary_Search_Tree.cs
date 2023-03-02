@@ -1,6 +1,4 @@
-﻿using Leetcode.Common;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree {
         // traversal until go different path
         public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

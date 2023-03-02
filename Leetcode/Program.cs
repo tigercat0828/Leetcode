@@ -1,11 +1,11 @@
 ﻿using Leetcode.Common;
 using Leetcode.Problems;
-Leetcode912 leetcode912 = new Leetcode912();
+Leetcode443 leet = new();
 
-int[] nums = Utility.RandomIntegerArray(300,1,10);
+int[] nums = Utility.RandomIntegerArray(300, 1, 10);
 
-leetcode912.SortArray(nums);
-foreach (int num in nums) {
-    Console.Write (num + " ");
-}
+string str = "aabbbcc";
+int ans = leet.Compress(str.ToCharArray());
+Console.WriteLine(ans);
+
 

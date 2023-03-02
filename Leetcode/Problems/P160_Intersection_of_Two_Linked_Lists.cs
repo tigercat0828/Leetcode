@@ -1,6 +1,4 @@
-﻿using Leetcode.Common;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P160_Intersection_of_Two_Linked_Lists {
 
         // O(lenA + lenB)

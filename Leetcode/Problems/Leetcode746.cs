@@ -6,7 +6,7 @@
         // DP botton-up approach
         public int MinCostClimbingStairs(int[] cost) {
             int n = cost.Length;
-            int[] dp = new int[n+1];
+            int[] dp = new int[n + 1];
             dp[0] = 0;
             dp[1] = 0;
             for (int i = 2; i <= cost.Length; i++) {
@@ -18,7 +18,7 @@
         }
         // DP top-down approach 
         public int MinCostClimbingStairs2(int[] cost) {
-            
+
             this.cost = cost;
             int n = cost.Length;
             memo = new int[n];

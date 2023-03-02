@@ -4,9 +4,9 @@
 
         // not perfect and easy to understand
         public bool DetectCapitalUse(string word) {
-     
-            int length  = word.Length;
-            if(length == 1)return true;
+
+            int length = word.Length;
+            if (length == 1) return true;
             if (length == 2) {
                 if (IsUppercase(word[0]) && IsUppercase(word[1])) return true;  // AA
                 if (IsUppercase(word[0]) && IsLowercase(word[1])) return true;  // Aa

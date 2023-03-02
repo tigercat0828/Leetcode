@@ -1,6 +1,4 @@
-﻿using Leetcode.Common;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P145_Binary_Tree_Postorder_Traversal {
         // iterative
         public IList<int> PostorderTraversal(TreeNode root) {

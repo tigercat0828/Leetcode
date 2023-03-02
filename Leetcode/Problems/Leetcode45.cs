@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class Leetcode45 {
         struct Node {
-            
+
             public Node(int position, int move, int level) {
                 Position = position;
                 Move = move;
@@ -26,7 +20,7 @@ namespace Leetcode.Problems {
             Queue<Node> queue = new Queue<Node>();
             int length = nums.Length;
             queue.Enqueue(new Node(0, nums[0], 0));
-            while (queue.Count > 0) { 
+            while (queue.Count > 0) {
                 Node pop = queue.Dequeue();
                 //Console.WriteLine($"Dequeue {pop}");
                 if (pop.Position == length - 1) return pop.Level;
@@ -48,7 +42,7 @@ namespace Leetcode.Problems {
             for (int i = 0; i < n; i++) {
                 for (int j = 1; j <= nums[i]; j++) {
                     if (i + j < n) {
-                        DP[i + j] = Math.Min(DP[i]+1, DP[i+j]);
+                        DP[i + j] = Math.Min(DP[i] + 1, DP[i + j]);
                     }
                 }
             }

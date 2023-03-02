@@ -1,6 +1,4 @@
-﻿using Leetcode.Common;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P2_Add_Two_Numbers {
 
         public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {

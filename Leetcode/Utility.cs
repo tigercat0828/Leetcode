@@ -4,9 +4,10 @@
             int[] array = new int[count];
             Random random = new Random();
             for (int i = 0; i < count; i++) {
-                array[i] = random.Next(min, max+1);
+                array[i] = random.Next(min, max + 1);
             }
             return array;
         }
+
     }
 }

@@ -12,8 +12,8 @@
             remain[0] = 0;
             for (int i = 1; i <= amount; i++) {
                 foreach (var coin in coins) {
-                    if (i - coin < 0) continue;             
-                    if(remain[i - coin] == -1) continue;    // i-coin 也沒有答案,換下一個coin測試
+                    if (i - coin < 0) continue;
+                    if (remain[i - coin] == -1) continue;    // i-coin 也沒有答案,換下一個coin測試
 
                     if (remain[i] == -1) {
                         remain[i] = remain[i - coin] + 1;

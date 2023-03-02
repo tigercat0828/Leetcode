@@ -1,5 +1,4 @@
-﻿using Leetcode.Common;
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P103_Binary_Tree_Zigzag_Level_Order_Traversal {
 
         public IList<IList<int>> ZigzagLevelOrder(TreeNode root) {

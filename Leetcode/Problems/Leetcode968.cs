@@ -1,6 +1,4 @@
-﻿using Leetcode.Common;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class Leetcode968 {
         const int UNCOVERED = 0;
         const int CAMERA = 1;
@@ -23,7 +21,7 @@ namespace Leetcode.Problems {
                 cameraCount++;
                 return CAMERA;
             }
-            if(left == COVERED && right == COVERED) {
+            if (left == COVERED && right == COVERED) {
                 return UNCOVERED;
             }
             // at least one camera

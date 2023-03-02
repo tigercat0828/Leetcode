@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class Leetcode5 {
         // DP O(n^2)
         public string LongestPalindrome(string s) {
@@ -23,11 +17,11 @@ namespace Leetcode.Problems {
             for (int j = 1; j < n; j++) {
                 for (int i = 0; i < j; i++) {
                     // determin s[i..j] is a palindrome
-                    if(i+1 == j) {
+                    if (i + 1 == j) {
                         dp[i][j] = s[i] == s[j];
                     }
                     else {
-                        dp[i][j] = s[i] == s[j] && dp[i+1][j-1];
+                        dp[i][j] = s[i] == s[j] && dp[i + 1][j - 1];
                     }
                     // record max
                     if (dp[i][j] == true && j - i > max) {
@@ -37,8 +31,8 @@ namespace Leetcode.Problems {
                     }
                 }
             }
-          
-            return s.Substring(start, end - start+1);
+
+            return s.Substring(start, end - start + 1);
         }
     }
 }

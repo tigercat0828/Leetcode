@@ -1,6 +1,4 @@
-﻿using Leetcode.Common;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.Problems {
     public class P141_Linked_List_Cycle {
 
         public bool HasCycle(ListNode head) {
