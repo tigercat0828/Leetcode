@@ -1,6 +1,5 @@
 ﻿namespace Leetcode.Problems {
-    public class P242_Valid_Anagram {
-
+    public class Leetcode242 {
         // O(n)
         public bool IsAnagram(string s, string t) {
             int[] dictS = new int[26];
