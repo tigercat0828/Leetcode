@@ -1,5 +1,6 @@
 ﻿// Sysmmetric Tree
-namespace Leetcode.Problems {
+
+namespace Leetcode.Common {
     public class TreeNode {
         public TreeNode left;
         public TreeNode right;

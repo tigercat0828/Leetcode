@@ -1,4 +1,6 @@
-﻿namespace Leetcode.Problems {
+﻿using Leetcode.Common;
+
+namespace Leetcode.Problems {
     public class P24_Swap_Nodes_in_Pairs {
 
         // iterative

@@ -1,4 +1,6 @@
-﻿namespace Leetcode.Problems {
+﻿using Leetcode.Common;
+
+namespace Leetcode.Problems {
     public class P876_Middle_of_the_Linked_List {
         // O(n/2) by fast and slow pointer
         public ListNode MiddleNode(ListNode head) {

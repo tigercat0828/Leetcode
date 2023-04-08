@@ -1,4 +1,6 @@
-﻿namespace Leetcode.Problems {
+﻿using Leetcode.Common;
+
+namespace Leetcode.Problems {
     public class P404_Sum_of_Left_Leaves {
         class Node {
 

@@ -1,4 +1,6 @@
-﻿namespace Leetcode.Problems {
+﻿using Leetcode.Common;
+
+namespace Leetcode.Problems {
     public class P1290_Convert_Binary_Number_in_a_Linked_List_to_Integer {
         // bit manupulation O(n)
         public int GetDecimalValue(ListNode head) {

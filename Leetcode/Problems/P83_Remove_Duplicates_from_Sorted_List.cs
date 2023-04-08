@@ -1,4 +1,6 @@
-﻿namespace Leetcode.Problems {
+﻿using Leetcode.Common;
+
+namespace Leetcode.Problems {
     public class P83_Remove_Duplicates_from_Sorted_List {
         public ListNode DeleteDuplicates(ListNode head) {
             if (head == null) return null;

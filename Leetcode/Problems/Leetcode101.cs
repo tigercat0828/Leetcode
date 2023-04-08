@@ -1,4 +1,6 @@
 ﻿// Sysmmetric Tree
+using Leetcode.Common;
+
 namespace Leetcode.Problems {
     public class Leetcode101 {
         public bool IsSymmetric(TreeNode root) {

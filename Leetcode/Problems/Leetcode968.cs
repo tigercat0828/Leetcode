@@ -1,4 +1,6 @@
-﻿namespace Leetcode.Problems {
+﻿using Leetcode.Common;
+
+namespace Leetcode.Problems {
     public class Leetcode968 {
         const int UNCOVERED = 0;
         const int CAMERA = 1;

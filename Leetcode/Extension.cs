@@ -8,5 +8,8 @@ namespace Leetcode {
             Console.WriteLine(sb);
             return sb.ToString();
         }
+        public static void Print(this int[] arr) {
+            Console.WriteLine("[ " + string.Join(", ", arr) + "]");
+        }
     }
 }

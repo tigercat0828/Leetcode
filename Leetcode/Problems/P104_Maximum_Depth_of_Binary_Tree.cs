@@ -1,4 +1,6 @@
-﻿namespace Leetcode.Problems {
+﻿using Leetcode.Common;
+
+namespace Leetcode.Problems {
     public class P104_Maximum_Depth_of_Binary_Tree {
 
         int maxHeight = 0;

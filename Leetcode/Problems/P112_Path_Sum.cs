@@ -1,4 +1,6 @@
-﻿namespace Leetcode.Problems {
+﻿using Leetcode.Common;
+
+namespace Leetcode.Problems {
     public class P112_Path_Sum {
 
         public bool HasPathSum(TreeNode root, int targetSum) {
