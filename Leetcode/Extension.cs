@@ -11,5 +11,8 @@ namespace Leetcode {
         public static void Print(this int[] arr) {
             Console.WriteLine("[ " + string.Join(", ", arr) + "]");
         }
+        public static void Print(this List<int> list) {
+            Console.WriteLine("[ " + string.Join(", ", list) + "]");
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Leetcode.Common {
     public static class Utility {
-        public static int[] RandomIntegerArray(int count, int min, int max) {
+        public static int[] RandomArray(int count, int min, int max) {
             int[] array = new int[count];
             Random random = new Random();
             for (int i = 0; i < count; i++) {
@@ -8,6 +8,30 @@
             }
             return array;
         }
+        public static int[][] RandomMatrix(int row, int col, int min, int max) {
+            int[][] matrix = new int[row][];
+            for (int i = 0; i < row; i++) matrix[i] = new int[col];
+            Random random = new Random();
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < col; j++) {
+                    matrix[i][j] = random.Next(min, max + 1);
+                }
+            }
+            return matrix;
+        }
+        public static void PrintMatrix(int[][] matrix) {
+            for (int i = 0; i < matrix.Length; i++)
+                Console.WriteLine("[" + string.Join(", ", matrix[i]) + "]");
+        }
+        public static void PrintMatrix(bool[][] matrix) {
+            for (int i = 0; i < matrix.Length; i++) {
+                Console.Write("[");
+                for (int j = 0; j < matrix[0].Length; j++) {
 
+                    Console.Write((matrix[i][j] ? 1 : 0) + ", ");
+                }
+                Console.WriteLine("]");
+            }
+        }
     }
 }
