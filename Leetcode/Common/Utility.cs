@@ -33,5 +33,17 @@
                 Console.WriteLine("]");
             }
         }
+        public static int[][] ParseArray2D(string input) {
+            string[] rowStrings = input.Trim('[', ']').Split(new string[] { "],[" }, StringSplitOptions.None);
+
+            int rowCount = rowStrings.Length;
+            int[][] jaggedArray = new int[rowCount][];
+
+            for (int i = 0; i < rowCount; i++) {
+                jaggedArray[i] = rowStrings[i].Split(',').Select(int.Parse).ToArray();
+            }
+
+            return jaggedArray;
+        }
     }
 }
