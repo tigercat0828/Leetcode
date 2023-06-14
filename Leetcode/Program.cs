@@ -1,12 +1,11 @@
-﻿using Leetcode.Common;
+﻿using Leetcode;
+using Leetcode.Common;
 using Leetcode.Problems;
 
-Leetcode1376 code = new ();
+Leetcode228 code = new ();
+int[] nums = new int[] { 0, 1, 2,  4, 5, 7, 8, 9 };
+IList<string> ans = code.SummaryRanges(nums);
 
-int ans = code.NumOfMinutes(
-    7,
-    2,
-    new int[] {3,2,-1,2,2,1,1},
-    new int[] { 0,7,4,2,0,0,0 }
-    );
-Console.WriteLine(ans);
+foreach (var item in ans) {
+    Console.WriteLine(item);
+}

@@ -8,6 +8,9 @@
             }
             return array;
         }
+        public static void PrintArray<T>(List<T> list) {
+            Console.WriteLine(string.Join(string.Empty, list));
+        }
         public static int[][] RandomMatrix(int row, int col, int min, int max) {
             int[][] matrix = new int[row][];
             for (int i = 0; i < row; i++) matrix[i] = new int[col];

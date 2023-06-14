@@ -1,7 +1,7 @@
 ﻿
 
 namespace Leetcode.Problems {
-    public class P1502_Can_Make_Arithmetic_Progression_From_Sequence {
+    public class Leetcode1502 {
         public bool CanMakeArithmeticProgression2(int[] arr) {
             if (arr.Length == 2) return true;
             Array.Sort(arr);
@@ -19,7 +19,7 @@ namespace Leetcode.Problems {
         public bool CanMakeArithmeticProgression(int[] arr) {
             if (arr.Length <= 2) return true;
             const int bound = 1000000;
-            Dictionary<int, int> dict = new Dictionary<int, int>();
+            Dictionary<int, int> dict = new();
             // -100000 ~ +100000
             int[] nums = new int[2 * bound + 1];
             for (int i = 0; i < arr.Length; i++) {
