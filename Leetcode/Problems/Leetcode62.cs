@@ -3,9 +3,7 @@
         public int UniquePaths(int m, int n) {
             int[][] mat = new int[m][];
             for (int i = 0; i < m; i++) {
-                for (int j = 0; j < m; j++) {
-                    mat[i] = new int[n];
-                }
+                mat[i] = new int[n];
             }
             for (int i = 0; i < n; i++) {
                 mat[0][i] = 1;
