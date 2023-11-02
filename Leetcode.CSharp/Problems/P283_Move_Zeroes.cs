@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P283_Move_Zeroes {
         public void MoveZeroes(int[] nums) {
             int len = 0;

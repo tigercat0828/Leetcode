@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1051_Height_Checker {
         public int HeightChecker(int[] heights) {
             int fault = 0;

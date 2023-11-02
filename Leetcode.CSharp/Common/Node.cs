@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Common;
+﻿namespace Leetcode.CSharp.Common;
 public class Node {
     public int val;
     public IList<Node> children;

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode120 {
         // bottom-up (better, clean, less if-statement)
         public int MinimumTotal(IList<IList<int>> triangle) {

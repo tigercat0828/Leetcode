@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     // Definition for a Node.
 
     public class Leetcode133 {

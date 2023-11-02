@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1089_Duplicate_Zeros {
         public void DuplicateZeros(int[] arr) {
             int index = 0;

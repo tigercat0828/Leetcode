@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode1572 {
         // O(n)
         public int DiagonalSum(int[][] mat) {

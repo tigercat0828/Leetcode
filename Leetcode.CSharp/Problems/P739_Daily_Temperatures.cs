@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P739_Daily_Temperatures {
 
         public int[] DailyTemperatures(int[] temperatures) {

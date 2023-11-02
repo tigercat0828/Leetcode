@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode1964 {
         // O(n^2) TLE
         public int[] LongestObstacleCourseAtEachPosition(int[] obstacles) {

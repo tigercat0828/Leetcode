@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P374_Guess_Number_Higher_or_Lower {
         public int GuessNumber(int n) {
             int left = 1;

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Common {
+﻿namespace Leetcode.CSharp.Common {
     public static class Utility {
         public static int[] RandomArray(int count, int min, int max) {
             int[] array = new int[count];

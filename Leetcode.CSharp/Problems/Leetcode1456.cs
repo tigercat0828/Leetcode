@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode1456 {
         // sliding window O(n)
         public int MaxVowels(string s, int k) {

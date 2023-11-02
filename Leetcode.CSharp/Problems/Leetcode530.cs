@@ -1,6 +1,6 @@
-﻿using Leetcode.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.Problems;
+namespace Leetcode.CSharp.Problems;
 public class Leetcode530 {
     int prvious = -200000;
     int min = int.MaxValue;

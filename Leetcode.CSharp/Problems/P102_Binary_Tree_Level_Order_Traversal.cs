@@ -1,6 +1,6 @@
-﻿using Leetcode.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class P102_Binary_Tree_Level_Order_Traversal {
 
         public IList<IList<int>> LevelOrder(TreeNode root) {

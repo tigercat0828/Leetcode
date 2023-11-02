@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P976_Largest_Perimeter_Triangle {
 
         // O(nlogn)

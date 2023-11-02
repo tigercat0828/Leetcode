@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P117_Populating_Next_Right_Pointers_in_Each_Node_II {
         public class Node {
             public int val;

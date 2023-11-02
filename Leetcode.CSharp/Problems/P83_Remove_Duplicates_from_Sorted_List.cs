@@ -1,6 +1,6 @@
-﻿using Leetcode.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class P83_Remove_Duplicates_from_Sorted_List {
         public ListNode DeleteDuplicates(ListNode head) {
             if (head == null) return null;

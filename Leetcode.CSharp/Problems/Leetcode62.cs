@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode62 {
         public int UniquePaths(int m, int n) {
             int[][] mat = new int[m][];

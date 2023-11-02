@@ -1,6 +1,6 @@
 ﻿
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class P647_Palindromic_Substrings {
         public int CountSubstrings(string s) {
             int row = s.Length;

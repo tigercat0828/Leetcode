@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P852_Peak_Index_in_a_Mountain_Array {
         // O(logn)
         public int PeakIndexInMountainArray(int[] array) {

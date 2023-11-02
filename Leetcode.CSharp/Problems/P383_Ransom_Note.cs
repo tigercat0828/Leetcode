@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P383_Ransom_Note {
         // O(n)
         public bool CanConstruct(string ransomNote, string magazine) {

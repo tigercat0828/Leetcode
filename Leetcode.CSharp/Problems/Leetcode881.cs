@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode881 {
         public int NumRescueBoats(int[] people, int limit) {
             Array.Sort(people);

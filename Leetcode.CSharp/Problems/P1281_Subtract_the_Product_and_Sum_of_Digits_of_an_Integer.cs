@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1281_Subtract_the_Product_and_Sum_of_Digits_of_an_Integer {
         public int SubtractProductAndSum(int n) {
             int product = 1;

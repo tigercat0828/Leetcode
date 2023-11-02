@@ -1,6 +1,6 @@
-﻿using Leetcode.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
 
     /*
     fast = 2 * slow     

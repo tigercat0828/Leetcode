@@ -1,6 +1,6 @@
-﻿using Leetcode.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.Problems;
+namespace Leetcode.CSharp.Problems;
 public class Leetcode590 {
     public IList<int> Postorder(Node root) {
         if (root == null) return new List<int>();

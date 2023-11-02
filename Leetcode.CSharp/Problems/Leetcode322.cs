@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode322 {
         // dp approach bottom-up
         public int CoinChange(int[] coins, int amount) {

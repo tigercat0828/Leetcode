@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P387_First_Unique_Character_in_a_String {
 
         class CharNode {

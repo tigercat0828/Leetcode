@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode242 {
         // O(n)
         public bool IsAnagram(string s, string t) {

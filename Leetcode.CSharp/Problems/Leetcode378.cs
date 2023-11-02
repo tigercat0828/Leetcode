@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
 
     public class Leetcode378 {
         public int KthSmallest(int[][] matrix, int k) {

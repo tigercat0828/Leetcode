@@ -1,6 +1,6 @@
-﻿using Leetcode.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class Leetcode617 {
 
         public TreeNode MergeTrees(TreeNode root1, TreeNode root2) {

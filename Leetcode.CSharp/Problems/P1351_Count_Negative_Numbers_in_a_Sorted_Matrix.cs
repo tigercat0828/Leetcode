@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1351_Count_Negative_Numbers_in_a_Sorted_Matrix {
 
         // O(mlogn) mxn matrix

@@ -1,6 +1,6 @@
-﻿using Leetcode.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class P226_Invert_Binary_Tree {
 
         public TreeNode InvertTree(TreeNode root) {

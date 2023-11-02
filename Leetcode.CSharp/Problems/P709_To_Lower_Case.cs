@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P709_To_Lower_Case {
         public string ToLowerCase(string s) {
             string res = "";

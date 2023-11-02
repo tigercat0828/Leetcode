@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode278 {
         public int FirstBadVersion(int n) {
             if (n <= 0) {

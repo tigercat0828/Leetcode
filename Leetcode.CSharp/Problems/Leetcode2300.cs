@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     // Successful Pairs of Spells and Potions
     public class Leetcode2300 {
         // naive approach

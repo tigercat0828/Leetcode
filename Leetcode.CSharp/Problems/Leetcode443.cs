@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class Leetcode443 {
         public int Compress(char[] chars) {
             char current = '\n';

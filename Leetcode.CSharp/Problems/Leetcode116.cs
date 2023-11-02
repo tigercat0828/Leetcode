@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
 
     public class Leetcode116 {
 
@@ -54,12 +54,12 @@
 
             public Node() { }
 
-            public Node(int _val) {
-                val = _val;
+            public Node(int val) {
+                this.val = val;
             }
 
-            public Node(int _val, Node _left, Node _right, Node _next) {
-                val = _val;
+            public Node(int val, Node _left, Node _right, Node _next) {
+                this.val = val;
                 left = _left;
                 right = _right;
                 next = _next;

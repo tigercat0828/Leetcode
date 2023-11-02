@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1539_Kth_Missing_Positive_Number {
         // O(n)
         public int FindKthPositive(int[] arr, int k) {

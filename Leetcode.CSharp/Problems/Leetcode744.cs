@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode744 {
         public class Solution {
             public char NextGreatestLetter(char[] letters, char target) {

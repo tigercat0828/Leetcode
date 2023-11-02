@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P779_Kth_Symbol_in_Grammar {
 
         // O(logn)

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P69_Sqrt_x {
         // Binary Search O(logx)
         public int MySqrt(int x) {

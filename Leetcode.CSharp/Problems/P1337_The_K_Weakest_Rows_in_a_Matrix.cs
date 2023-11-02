@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1337_The_K_Weakest_Rows_in_a_Matrix {
         class RowComparer : Comparer<RowSoldierPair> {
             public override int Compare(RowSoldierPair x, RowSoldierPair y) {

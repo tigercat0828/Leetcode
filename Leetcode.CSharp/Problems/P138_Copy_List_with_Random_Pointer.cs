@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P138_Copy_List_with_Random_Pointer {
         public class Node {
             public int val;

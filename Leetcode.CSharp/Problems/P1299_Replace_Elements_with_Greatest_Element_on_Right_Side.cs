@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1299_Replace_Elements_with_Greatest_Element_on_Right_Side {
 
         public int[] ReplaceElements(int[] arr) {

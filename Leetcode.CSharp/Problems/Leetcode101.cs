@@ -1,7 +1,8 @@
 ﻿// Sysmmetric Tree
-using Leetcode.Common;
 
-namespace Leetcode.Problems {
+using Leetcode.CSharp.Common;
+
+namespace Leetcode.CSharp.Problems {
     public class Leetcode101 {
         public bool IsSymmetric(TreeNode root) {
             Queue<TreeNode> queue = new Queue<TreeNode>();

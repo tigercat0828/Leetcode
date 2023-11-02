@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems;
+﻿namespace Leetcode.CSharp.Problems;
 public class Leetcode1091 {
 
     public int ShortestPathBinaryMatrix(int[][] grid) {

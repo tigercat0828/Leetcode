@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode290 {
         public bool WordPattern(string pattern, string s) {
             // Bidirection Dict

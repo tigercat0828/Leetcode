@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P232_Implement_Queue_using_Stacks {
         private Stack<int> stackQueue;
         private Stack<int> stackTmp;

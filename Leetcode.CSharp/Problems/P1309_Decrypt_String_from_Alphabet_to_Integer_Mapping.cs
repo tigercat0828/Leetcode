@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1309_Decrypt_String_from_Alphabet_to_Integer_Mapping {
 
         public string FreqAlphabets(string s) {

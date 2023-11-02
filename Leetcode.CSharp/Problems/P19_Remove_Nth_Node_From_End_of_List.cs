@@ -1,6 +1,6 @@
-﻿using Leetcode.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class P19_Remove_Nth_Node_From_End_of_List {
 
         public ListNode RemoveNthFromEnd(ListNode head, int n) {

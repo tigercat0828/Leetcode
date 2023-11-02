@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1523_Count_Odd_Numbers_in_an_Interval_Range {
         public int CountOdds(int low, int high) {
             if (low % 2 == 0) low++;

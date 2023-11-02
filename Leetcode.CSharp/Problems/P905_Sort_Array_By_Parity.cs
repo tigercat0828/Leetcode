@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P905_Sort_Array_By_Parity {
         public int[] SortArrayByParity(int[] nums) {
             int index = 0;

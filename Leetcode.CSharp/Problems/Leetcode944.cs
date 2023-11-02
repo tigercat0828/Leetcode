@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode944 {
         public int MinDeletionSize(string[] strs) {
             int faultColumn = 0;

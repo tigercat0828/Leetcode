@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode35 {
         // O(logn)
         public int SearchInsert(int[] nums, int target) {

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode238 {
         public int[] ProductExceptSelf(int[] nums) {
             int product = 1;

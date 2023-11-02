@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode867 {
         public int[][] Transpose(int[][] matrix) {
             int row = matrix.Length;

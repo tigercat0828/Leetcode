@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode5 {
         // DP O(n^2)
         public string LongestPalindrome(string s) {

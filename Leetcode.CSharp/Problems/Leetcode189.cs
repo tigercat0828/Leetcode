@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode189 {
         // time O(n)
         public void Rotate(int[] nums, int k) {

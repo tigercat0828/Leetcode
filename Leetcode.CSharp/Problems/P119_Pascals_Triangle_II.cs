@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P119_Pascals_Triangle_II {
         public IList<int> GetRow(int rowIndex) {
             List<int> row2 = new List<int> { 1, 1 };

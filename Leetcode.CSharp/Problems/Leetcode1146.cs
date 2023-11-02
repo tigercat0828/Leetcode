@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems; 
+﻿namespace Leetcode.CSharp.Problems; 
 public class Leetcode1146 {
 
     public class SnapshotArray {    // list of dictionary

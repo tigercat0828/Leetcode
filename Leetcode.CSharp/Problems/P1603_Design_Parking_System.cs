@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1603_Design_Parking_System {
         public class ParkingSystem {
             enum CarType {

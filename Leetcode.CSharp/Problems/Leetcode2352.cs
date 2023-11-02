@@ -1,7 +1,6 @@
-﻿using System.Linq;
-using System.Text;
+﻿using System.Text;
 
-namespace Leetcode.Problems; 
+namespace Leetcode.CSharp.Problems; 
 public class Leetcode2352 {
     public int EqualPairs(int[][] grid) {
         List<string> rows = new();

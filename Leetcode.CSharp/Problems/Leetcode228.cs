@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems;
+﻿namespace Leetcode.CSharp.Problems;
 public class Leetcode228 {
     public IList<string> SummaryRanges(int[] nums) {
 

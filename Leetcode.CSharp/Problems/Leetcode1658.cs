@@ -1,6 +1,6 @@
 ﻿
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class Leetcode1658 {
         //
         public int MinOperations(int[] nums, int x) {

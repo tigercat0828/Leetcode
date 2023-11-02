@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1480_Running_Sum_of_1d_Array {
         public int[] RunningSum(int[] nums) {
             for (int i = 1; i < nums.Length; i++) {

@@ -1,3 +1,5 @@
+namespace Leetcode.CSharp.Problems;
+
 public class Leetcode706{
     public class MyHashMap {
         int[] dict = new int[1000001];

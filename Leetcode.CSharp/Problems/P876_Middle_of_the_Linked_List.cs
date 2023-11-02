@@ -1,6 +1,6 @@
-﻿using Leetcode.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class P876_Middle_of_the_Linked_List {
         // O(n/2) by fast and slow pointer
         public ListNode MiddleNode(ListNode head) {

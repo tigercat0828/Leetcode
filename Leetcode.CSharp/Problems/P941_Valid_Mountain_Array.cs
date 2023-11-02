@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P941_Valid_Mountain_Array {
         public bool ValidMountainArray(int[] arr) {
 

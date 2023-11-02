@@ -1,6 +1,6 @@
-﻿using Leetcode.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class P103_Binary_Tree_Zigzag_Level_Order_Traversal {
 
         public IList<IList<int>> ZigzagLevelOrder(TreeNode root) {

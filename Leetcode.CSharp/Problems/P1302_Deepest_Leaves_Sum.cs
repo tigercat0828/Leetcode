@@ -1,6 +1,6 @@
-﻿using Leetcode.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
 
     // O(n) node of the root, BFS
     public class P1302_Deepest_Leaves_Sum {

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P121_Best_Time_to_Buy_and_Sell_Stock {
 
         // Brute force O(n^2)

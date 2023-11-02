@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1385_Find_the_Distance_Value_Between_Two_Arrays {
         public int FindTheDistanceValue(int[] arr1, int[] arr2, int d) {
             int count = 0;

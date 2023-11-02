@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P994_Rotting_Oranges {
         Vec2[] dirs = new Vec2[] {
             new Vec2(0,1),

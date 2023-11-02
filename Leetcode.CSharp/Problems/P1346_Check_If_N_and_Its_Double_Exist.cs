@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1346_Check_If_N_and_Its_Double_Exist {
         public bool CheckIfExist(int[] arr) {
             Dictionary<float, float> dict = new();

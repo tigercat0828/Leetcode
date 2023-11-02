@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1855_Maximum_Distance_Between_a_Pair_of_Values {
         // O(n^2) Brute force TLE
         public int MaxDistance3(int[] nums1, int[] nums2) {

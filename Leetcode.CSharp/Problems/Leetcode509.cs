@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode509 {
         // iterative | space O(1), time O(n)
         public int Fib2(int n) {

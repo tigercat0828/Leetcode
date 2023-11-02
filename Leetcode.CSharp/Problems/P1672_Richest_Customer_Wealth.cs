@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1672_Richest_Customer_Wealth {
         public int MaximumWealth(int[][] accounts) {
             int maxCustomer = int.MinValue;

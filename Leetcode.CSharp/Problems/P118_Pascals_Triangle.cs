@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P118_Pascals_Triangle {
         public IList<IList<int>> Generate(int numRows) {
             List<IList<int>> result = new List<IList<int>>();

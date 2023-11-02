@@ -1,6 +1,5 @@
 ﻿using Leetcode;
-using Leetcode.Common;
-using Leetcode.Problems;
+using Leetcode.CSharp.Problems;
 
 Leetcode228 code = new ();
 int[] nums = new int[] { 0, 1, 2,  4, 5, 7, 8, 9 };

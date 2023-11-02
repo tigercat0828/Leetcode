@@ -1,6 +1,6 @@
-﻿using Leetcode.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class P653_Two_Sum_IV_Input_is_a_BST {
         public bool FindTarget(TreeNode root, int k) {
             if (root == null) return false;

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Common {
+﻿namespace Leetcode.CSharp.Common {
     public class ListNode {
         public ListNode next;
         public int val;

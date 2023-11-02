@@ -1,5 +1,5 @@
 ﻿// House Robber II
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class Leetcode213 {
         int[][] memo;
         int[] nums;

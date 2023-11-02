@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1678_Goal_Parser_Interpretation {
         public string Interpret(string command) {
             // G, (), (al);

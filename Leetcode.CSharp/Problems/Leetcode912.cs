@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode912 {
         public int[] SortArray(int[] nums) {
             QuickSort(nums, 0, nums.Length - 1);

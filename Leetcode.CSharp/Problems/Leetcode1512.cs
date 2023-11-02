@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public  class Leetcode1512 {
         // O(n^2)
         public int NumIdenticalPairs2(int[] nums) {

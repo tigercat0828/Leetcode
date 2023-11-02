@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P328_Odd_Even_Linked_List {
 
         public class ListNode {

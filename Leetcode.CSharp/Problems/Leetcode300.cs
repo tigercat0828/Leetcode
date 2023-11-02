@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode300 {
         // O(n^2)
         int LengthOfLIS(int[] nums) {

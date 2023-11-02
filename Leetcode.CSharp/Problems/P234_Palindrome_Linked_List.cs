@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P234_Palindrome_Linked_List {
         public class ListNode {
             public int val;

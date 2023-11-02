@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P953_Verifying_an_Alien_Dictionary {
         int[] map = new int[26];
         public bool isAlienSorted(String[] words, String order) {

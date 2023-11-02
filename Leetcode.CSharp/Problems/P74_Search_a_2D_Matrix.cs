@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P74_Search_a_2D_Matrix {
         public bool SearchMatrix(int[][] matrix, int target) {
             // binary search

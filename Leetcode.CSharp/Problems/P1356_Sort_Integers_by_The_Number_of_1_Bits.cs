@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P1356_Sort_Integers_by_The_Number_of_1_Bits {
 
         private static int CountOneBit(int num) {

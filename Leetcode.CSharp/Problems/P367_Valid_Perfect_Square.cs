@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P367_Valid_Perfect_Square {
         // binary search O(logn)
         public bool IsPerfectSquare(int num) {

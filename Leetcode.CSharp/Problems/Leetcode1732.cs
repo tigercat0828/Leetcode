@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems;
+﻿namespace Leetcode.CSharp.Problems;
 
 public class Leetcode1732 {
     public int LargestAltitude(int[] gain) {

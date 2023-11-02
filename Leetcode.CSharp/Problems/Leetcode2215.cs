@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode2215 {
         public IList<IList<int>> FindDifference(int[] nums1, int[] nums2) {
             HashSet<int> A = nums1.ToHashSet();

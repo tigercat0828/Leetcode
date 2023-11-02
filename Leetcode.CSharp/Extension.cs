@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Leetcode {
+namespace Leetcode.CSharp {
     public static class Extension {
         public static string Print(this char[] arr) {
             StringBuilder sb = new StringBuilder();

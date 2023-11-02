@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
 
     public class P485_Max_Consecutive_Ones {
         public int FindMaxConsecutiveOnes(int[] nums) {

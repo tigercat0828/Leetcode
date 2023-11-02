@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P88_Merge_Sorted_Array {
         public void Merge(int[] nums1, int m, int[] nums2, int n) {
             int[] temp = new int[m];

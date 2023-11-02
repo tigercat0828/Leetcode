@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode54 {
         //  Right, Down, Left, Up
         static int[] dr = { 0, 1, 0, -1 };

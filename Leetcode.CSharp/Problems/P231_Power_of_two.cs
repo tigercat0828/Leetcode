@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P231_Power_of_two {
         public bool IsPowerOfTwo(int n) {
             return (n > 0) && (n & (n - 1)) == 0;

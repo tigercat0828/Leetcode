@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode977 {
         // O(n)
         public int[] SortedSquares(int[] nums) {

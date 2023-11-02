@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P695_Max_Area_of_Island {
         int[] dx = new int[] { 0, 1, 0, -1 };
         int[] dy = new int[] { 1, 0, -1, 0 };

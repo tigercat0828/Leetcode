@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class P200_Number_of_Islands {
         bool[][] isVisited;
         readonly int[] dr = { 0, 0, -1, 1 }; // direciotn for row:i

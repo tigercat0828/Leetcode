@@ -1,5 +1,5 @@
 ﻿
-namespace Leetcode.Problems {
+namespace Leetcode.CSharp.Problems {
     public class P202_Happy_Number {
         public bool IsHappy(int n) {
 

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode1822 {
         public int ArraySign(int[] nums) {
             int sign = 1;
