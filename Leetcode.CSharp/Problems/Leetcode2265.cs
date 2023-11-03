@@ -3,9 +3,7 @@ using System.Data.Common;
 
 namespace Leetcode.CSharp.Problems;
 
-public class Leetcode2265
-{
-
+public class Leetcode2265 {
     public struct NodeInfo {
         public int sum;
         public int count;
@@ -24,24 +22,19 @@ public class Leetcode2265
     }
     int answer = 0;
     public int AverageOfSubtree(TreeNode root) {
-        NodeInfo info = new(0, 0);
         Traversal(root);
         return answer;
     }
-
-    /// <summary>
-    /// return sum of the subtree
-    /// retrun number of node of the subtree
-    /// </summary>
     private NodeInfo Traversal(TreeNode root) {
-        NodeInfo current = new();
-        if(root.left != null) {
+        NodeInfo current = new(root.val,1);
+        if (root.left != null) {
             current += Traversal(root.left);
         }
-        if(root.right != null) {
+        if (root.right != null) {
             current += Traversal(root.right);
         }
-        int average = 
-
+        if (root.val == current.sum / current.count) // average
+            answer++;
+        return new(current);
     }
 }
