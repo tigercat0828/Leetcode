@@ -1,10 +1,7 @@
 ﻿using Leetcode;
 using Leetcode.CSharp.Problems;
 
-Leetcode228 code = new ();
-int[] nums = new int[] { 0, 1, 2,  4, 5, 7, 8, 9 };
-IList<string> ans = code.SummaryRanges(nums);
+Leetcode1535 problem = new ();
+int ans = problem.GetWinner(new int[] { 2, 1, 3, 5, 4, 6, 7 }, 2);
+Console.WriteLine("ans " + ans);
 
-foreach (var item in ans) {
-    Console.WriteLine(item);
-}

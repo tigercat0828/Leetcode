@@ -17,21 +17,23 @@ public class Leetcode501 {
         }
 
         foreach (var item in dict) {
-            if(item.Value == maxNum)
+            if (item.Value == maxNum) {
+                modes.Add(item.Key);
+            }
         }
         return modes.ToArray();
     }
     private void PreOrder(TreeNode root) {
-        if(dict.ContainsKey(root.val)) {
+        if (dict.ContainsKey(root.val)) {
             dict[root.val]++;
         }
         else {
             dict.Add(root.val, 1);
         }
-        if(root.left != null) {
+        if (root.left != null) {
             PreOrder(root.left);
         }
-        if(root.right != null) { 
+        if (root.right != null) {
             PreOrder(root.right);
         }
     }
