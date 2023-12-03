@@ -1,4 +1,4 @@
-﻿namespace Leetcode.CSharp.Problems; 
+﻿namespace Leetcode.CSharp.Problems;
 public class Leetcode1376 {
     int[] managers;
     int[] informTimes;
@@ -7,8 +7,8 @@ public class Leetcode1376 {
         // build tree
         List<List<int>> tree = new();
         for (int i = 0; i < n; i++) tree.Add(new List<int>());
-        for (int i = 0; i < n; i++) { 
-            if(i==headID) continue;
+        for (int i = 0; i < n; i++) {
+            if (i == headID) continue;
             tree[manager[i]].Add(i);
         }
 
@@ -19,7 +19,7 @@ public class Leetcode1376 {
         // post order <leetcode 590>
         List<int> order = PostOrder(tree, headID);
         foreach (var em in order) {
-            if(em == headID) continue;
+            if (em == headID) continue;
             FindMyManager(em);
         }
         return times[headID];

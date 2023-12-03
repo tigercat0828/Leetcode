@@ -1,5 +1,4 @@
 ﻿using Leetcode.CSharp.Common;
-using System.Data.Common;
 
 namespace Leetcode.CSharp.Problems;
 
@@ -26,7 +25,7 @@ public class Leetcode2265 {
         return answer;
     }
     private NodeInfo Traversal(TreeNode root) {
-        NodeInfo current = new(root.val,1);
+        NodeInfo current = new(root.val, 1);
         if (root.left != null) {
             current += Traversal(root.left);
         }

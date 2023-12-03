@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.CSharp.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     // 1535 Find the Winner of an Array Game
     public class Leetcode1535 {
-       
+
         public int GetWinner(int[] arr, int k) {
-            if(k > arr.Length) {
+            if (k > arr.Length) {
                 return arr.ToList().Max();
             }
-            int winner = arr[0] ;
+            int winner = arr[0];
             int winTimes = 0;
             for (int i = 1; i < arr.Length; i++) {
-                if (winner>arr[i]) {
+                if (winner > arr[i]) {
                     winTimes++;
                 }
                 else { //winner < arr[i]
@@ -28,9 +22,9 @@ namespace Leetcode.CSharp.Problems {
             return winner; // error
         }
         public int GetWinner2(int[] arr, int k) {
-           
+
             if (k > arr.Length) {
-                return arr.ToList().Max();  
+                return arr.ToList().Max();
             }
             // simulation the problem statement
             LinkedList<int> deque = new();
@@ -41,7 +35,7 @@ namespace Leetcode.CSharp.Problems {
             }
             bool isGameOver = false;
             int winner = -1;
-            while(!isGameOver) {
+            while (!isGameOver) {
                 int A = deque.First.Value;
                 int B = deque.First.Next.Value;
                 deque.RemoveFirst();
@@ -59,7 +53,7 @@ namespace Leetcode.CSharp.Problems {
                     dict[B]++;
                     deque.AddFirst(B);
                     deque.AddLast(A);
-                    if (dict[B] == k) { 
+                    if (dict[B] == k) {
                         winner = B;
                         isGameOver = true;
                     }
@@ -68,5 +62,5 @@ namespace Leetcode.CSharp.Problems {
             return winner;
         }
     }
-   
+
 }

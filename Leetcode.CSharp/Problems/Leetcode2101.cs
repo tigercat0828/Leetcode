@@ -1,5 +1,5 @@
 ﻿
-namespace Leetcode.CSharp.Problems; 
+namespace Leetcode.CSharp.Problems;
 
 // Leetcode 2101 Detonate the Maximum Bombs
 public class Leetcode2101 {
@@ -18,7 +18,7 @@ public class Leetcode2101 {
                 long x = bombs[i][0] - bombs[j][0];
                 long y = bombs[i][1] - bombs[j][1];
                 long r = bombs[i][2];
-                if(r*r >= x*x + y*y) graph[i].Add(j);
+                if (r * r >= x * x + y * y) graph[i].Add(j);
             }
         }
         // Do DFS

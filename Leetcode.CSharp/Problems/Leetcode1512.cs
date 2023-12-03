@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Problems {
-    public  class Leetcode1512 {
+    public class Leetcode1512 {
         // O(n^2)
         public int NumIdenticalPairs2(int[] nums) {
             int count = 0;
@@ -28,6 +28,6 @@
             }
             return count;
         }
-      
+
     }
 }

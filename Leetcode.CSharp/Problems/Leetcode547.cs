@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Problems;
-public  class Leetcode547 {
+public class Leetcode547 {
     public int FindCircleNum(int[][] isConnected) {
         int groups = 0;
         int length = isConnected.Length;
@@ -12,11 +12,11 @@ public  class Leetcode547 {
         }
         return groups;
     }
-    private void DFS(int[][] matrix, bool[] visited ,int node) {
-        
+    private void DFS(int[][] matrix, bool[] visited, int node) {
+
         visited[node] = true;
         for (int i = 0; i < matrix[node].Length; i++) {
-            if (matrix[node][i]==1  &&!visited[node]) {
+            if (matrix[node][i] == 1 && !visited[node]) {
                 DFS(matrix, visited, i);
             }
         }

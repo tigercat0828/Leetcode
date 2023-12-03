@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Leetcode.CSharp.Common;
+﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.CSharp.Problems; 
+namespace Leetcode.CSharp.Problems;
 public class Leetcode501 {
     Dictionary<int, int> dict = new();
     public int[] FindMode(TreeNode root) {

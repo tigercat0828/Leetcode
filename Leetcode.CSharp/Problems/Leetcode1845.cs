@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.CSharp.Problems; 
+﻿namespace Leetcode.CSharp.Problems;
 public class Leetcode1845 {
     public class SeatManager {
         int customerNum;

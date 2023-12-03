@@ -1,12 +1,12 @@
 ﻿namespace Leetcode.CSharp.Problems {
-    public  class Leetcode59 {
+    public class Leetcode59 {
 
         //  Right, Down, Left, Up
         static int[] dr = { 0, 1, 0, -1 };
         static int[] dc = { 1, 0, -1, 0 };
         public int[][] GenerateMatrix(int n) {
 
-            
+
             int[][] matrix = new int[n][];
             for (int i = 0; i < n; i++) matrix[i] = new int[n];
 

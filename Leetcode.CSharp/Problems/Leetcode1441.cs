@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.CSharp.Problems;
+﻿namespace Leetcode.CSharp.Problems;
 // 1441. Build an Array With Stack Operations
 public class Leetcode1441 {
     public IList<string> BuildArray(int[] target, int n) {

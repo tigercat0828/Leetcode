@@ -1,4 +1,4 @@
-﻿namespace Leetcode.CSharp.Problems; 
+﻿namespace Leetcode.CSharp.Problems;
 public class Leetcode1146 {
 
     public class SnapshotArray {    // list of dictionary
@@ -24,7 +24,7 @@ public class Leetcode1146 {
 
         public int Snap() {
             snap++;
-            return snap-1;
+            return snap - 1;
         }
 
         public int Get(int index, int snap_id) {
@@ -50,23 +50,23 @@ public class Leetcode1146 {
 
         public void Set(int index, int val) {
             array[index] = val;
-            if(history.ContainsKey((snap, index))) {
-                history[(snap,index)] = val;
+            if (history.ContainsKey((snap, index))) {
+                history[(snap, index)] = val;
             }
             else {
-                history.Add((snap, index) , val );
+                history.Add((snap, index), val);
             }
         }
 
         public int Snap() {
             snap++;
-            return snap-1;
+            return snap - 1;
         }
         public int Get(int index, int snap_id) {
             int id = snap_id;
-            while(id >=0) {
-                if(history.ContainsKey((id,index))) { 
-                    return history[(id,index)];
+            while (id >= 0) {
+                if (history.ContainsKey((id, index))) {
+                    return history[(id, index)];
                 }
                 id--;
             }

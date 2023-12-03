@@ -7,7 +7,7 @@
             double dx = coordinates[0][0] - coordinates[coordinates.Length - 1][0];
             double dy = coordinates[0][1] - coordinates[coordinates.Length - 1][1];
             // vertical line 
-            if (dx == 0) {  
+            if (dx == 0) {
                 int x = coordinates[0][0];
                 for (int i = 1; i < coordinates.Length; i++) {
                     if (coordinates[i][0] != x) return false;

@@ -1,6 +1,6 @@
 ﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.CSharp.Problems; 
+namespace Leetcode.CSharp.Problems;
 public class Leetocde1161 {
     public int MaxLevelSum(TreeNode root) {
         // do level order
@@ -23,7 +23,7 @@ public class Leetocde1161 {
                 maxSum = sum;
                 maxLevel = level;
             }
-            
+
         }
         return maxLevel;
     }
