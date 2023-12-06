@@ -1,6 +1,5 @@
 ﻿using Leetcode.CSharp.Problems;
+using System.Xml;
 
-
-Console.WriteLine(TimeProvider.System.GetUtcNow());
-await Task.Delay(2000);
-Console.WriteLine(TimeProvider.System.GetUtcNow());
+int[] table = new int[60/7];
+Console.WriteLine(table.Length);
