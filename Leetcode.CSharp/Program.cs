@@ -1,5 +1,6 @@
 ﻿using Leetcode.CSharp.Problems;
 using System.Xml;
 
-int[] table = new int[60/7];
-Console.WriteLine(table.Length);
+Leetcode1903 problem = new();
+string ans = problem.LargestOddNumber("7542351161");
+ Console.WriteLine(ans);
