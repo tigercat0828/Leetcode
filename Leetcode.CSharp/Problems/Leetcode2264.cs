@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.CSharp.Problems {
+﻿namespace Leetcode.CSharp.Problems {
 
     // Largest 3-Same-Digit Number in String
     public class Leetcode2264 {

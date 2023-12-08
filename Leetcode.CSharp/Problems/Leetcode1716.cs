@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.CSharp.Problems;
+﻿namespace Leetcode.CSharp.Problems;
 
 // 1716. Calculate Money in Leetcode Bank
 public class Leetcode1716 {
@@ -26,6 +20,6 @@ public class Leetcode1716 {
         total += days * (weeks + 1 + weeks + days) / 2; // [w+1,w+2,w+3,...] 
         return total;
     }
-    
-    
+
+
 }

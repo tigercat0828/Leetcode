@@ -1,10 +1,8 @@
-﻿using System.Drawing;
-
-namespace Leetcode.CSharp.Problems;
+﻿namespace Leetcode.CSharp.Problems;
 public class Leetcode1266 {
     public int MinTimeToVisitAllPoints(int[][] points) {
         int time = 0;
-        for (int i = 1; i < points.Length; i++){
+        for (int i = 1; i < points.Length; i++) {
             time += Goto(points[i - 1], points[i]);
         }
         return time;

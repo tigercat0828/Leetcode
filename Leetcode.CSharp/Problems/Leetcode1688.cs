@@ -1,12 +1,4 @@
-﻿using Leetcode.CSharp.Problems;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-
-namespace Leetcode.CSharp.Problems {
+﻿namespace Leetcode.CSharp.Problems {
     public class Leetcode1688 {
         // 1688. Count of Matches in Tournament
         public int NumberOfMatches(int n) => n - 1;
