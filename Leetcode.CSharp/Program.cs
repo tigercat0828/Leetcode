@@ -1,5 +1,5 @@
 ﻿using Leetcode.CSharp.Problems;
 
-Leetcode1903 problem = new();
-string ans = problem.LargestOddNumber("7542351161");
+Leetcode1464 problem = new();
+var ans = problem.MaxProduct([3, 4, 5, 2]); 
 Console.WriteLine(ans);
