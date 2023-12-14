@@ -17,7 +17,7 @@ public class Leetcode606 {
         if (node.right != null) {
             result += $"({Preorder(node.right)})";
         }
-        return result.ToString();
+        return result.ToString(); 
     }
     private string Preorder2(TreeNode node) {
         if (node == null) return "";
