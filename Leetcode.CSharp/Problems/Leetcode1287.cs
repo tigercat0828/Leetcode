@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.CSharp.Problems {
-    public  class Leetcode1287 {
+﻿namespace Leetcode.CSharp.Problems {
+    public class Leetcode1287 {
         public int FindSpecialInteger(int[] arr) {
 
             int length = arr.Length;

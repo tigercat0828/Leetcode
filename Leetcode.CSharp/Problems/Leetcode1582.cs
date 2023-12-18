@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-//using ElementPos = (int r, int c); // .net 8
-namespace Leetcode.CSharp.Problems; 
+﻿//using ElementPos = (int r, int c); // .net 8
+namespace Leetcode.CSharp.Problems;
 public class Leetcode1582 {
     struct ElementPos {
         public int r;
@@ -19,7 +14,7 @@ public class Leetcode1582 {
         int cols = mat[0].Length;
         int[] rowCount = new int[rows];
         int[] colCount = new int[cols];
-        List<ElementPos> positions = new(); 
+        List<ElementPos> positions = new();
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (mat[i][j] > 0) {
@@ -62,5 +57,5 @@ public class Leetcode1582 {
 
         return ans;
     }
-     
+
 }

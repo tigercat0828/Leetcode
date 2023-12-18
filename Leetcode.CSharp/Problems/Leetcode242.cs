@@ -2,18 +2,17 @@
     public class Leetcode242 {
         // O(n)
         public bool IsAnagram(string s, string t) {
-            int[] dictS = new int[26];
-            int[] dictT = new int[26];
+            int[] charDictS = new int[26];
+            int[] charDictT = new int[26];
             foreach (char ch in s) {
-                dictS[ch - 'a']++;
+                charDictS[ch - 'a']++;
             }
             foreach (char ch in t) {
-                dictT[ch - 'a']++;
+                charDictT[ch - 'a']++;
             }
-            for (int i = 0; i < dictS.Length; i++) {
-                int sc = dictS[s[i] - 'a'];
-                int tc = dictT[t[i] - 'a'];
-                if (sc != tc) {
+            for (int i = 0; i < 26; i++) {
+
+                if (charDictT[i] != charDictS[i]) {
                     return false;
                 }
             }
