@@ -8,8 +8,8 @@ public class Leetcode1091 {
         if (grid[0][0] == 1 || grid[n - 1][n - 1] == 1) return -1;    // start or end are obstacle
 
         // setup
-        int[] DIR_R = new int[] { 0, 1, 1, 1, 0, -1, -1, -1 };
-        int[] DIR_C = new int[] { 1, 1, 0, -1, -1, -1, 0, 1 };
+        int[] DIR_R = [0, 1, 1, 1, 0, -1, -1, -1];
+        int[] DIR_C = [1, 1, 0, -1, -1, -1, 0, 1];
 
         int[][] distance = new int[n][];
         for (int i = 0; i < n; i++) {
@@ -20,7 +20,7 @@ public class Leetcode1091 {
         // Run Dijsktra
         Queue<int[]> queue = new();
         distance[0][0] = 1;
-        queue.Enqueue(new int[] { 0, 0 });
+        queue.Enqueue([0, 0]);
         while (queue.Any()) {
             int[] pop = queue.Dequeue();
             int row = pop[0];
@@ -35,7 +35,7 @@ public class Leetcode1091 {
                     distance[nextR][nextC] == -1 && grid[nextR][nextC] == 0) {
 
                     distance[nextR][nextC] = distance[row][col] + 1;
-                    queue.Enqueue(new int[] { nextR, nextC });
+                    queue.Enqueue([nextR, nextC]);
                 }
             }
         }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.CSharp.Problems; 
+﻿namespace Leetcode.CSharp.Solutions;
 public class Leetcode455 {
     public int FindContentChildren(int[] g, int[] s) {
         Array.Sort(g);

@@ -1,18 +1,18 @@
 ﻿using Leetcode.CSharp.Common;
 
 namespace Leetcode.CSharp.Solutions {
-    public class P102_Binary_Tree_Level_Order_Traversal {
+    public class Leetcode102 {
 
         public IList<IList<int>> LevelOrder(TreeNode root) {
             if (root == null) {
                 return new List<IList<int>>();
             }
-            List<IList<int>> listList = new();
-            Queue<TreeNode> queue = new();
-            int count = 1;
+            List<IList<int>> listList = [];
+            Queue<TreeNode> queue = [];
+            
             queue.Enqueue(root);
             while (queue.Count > 0) {
-                List<int> list = new List<int>();
+                List<int> list = [];
                 int size = queue.Count;
                 for (int i = 0; i < size; i++) {
                     TreeNode node = queue.Dequeue();

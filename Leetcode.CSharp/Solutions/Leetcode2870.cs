@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
-
-namespace Leetcode.CSharp.Problems; 
+﻿namespace Leetcode.CSharp.Solutions;
 
 public class Leetcode2870 {
     public int MinOperations(int[] nums) {
@@ -19,7 +11,7 @@ public class Leetcode2870 {
         foreach (var item in freq) {
             int num = item.Value;
             if (num == 1) return -1;
-            if(num %3 ==0) {
+            if (num % 3 == 0) {
                 result += num / 3;
 
             }
@@ -29,7 +21,7 @@ public class Leetcode2870 {
 
             //result += query(num);
         }
-            
+
         return result;
     }
     private Dictionary<int, int> CountFreq(int[] nums) {
@@ -52,7 +44,7 @@ public class Leetcode2870 {
         int n2 = query(n - 2);
         int n3 = query(n - 3);
         memo[n] = Math.Min(n2, n3) + 1;
-        return memo[n];  
+        return memo[n];
     }
     private void init() {
         int range = 1_000_000 + 1;

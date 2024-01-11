@@ -21,12 +21,12 @@
         // Space O(n)
         public Node Connect2(Node root) {
             if (root == null) return null;
-            List<List<Node>> levelList = new List<List<Node>>();
-            Queue<Node> queue = new Queue<Node>();
+            List<List<Node>> levelList = [];
+            Queue<Node> queue = new();
             queue.Enqueue(root);
             while (queue.Count > 0) {
                 int size = queue.Count;
-                List<Node> list = new List<Node>();
+                List<Node> list = new();
                 for (int i = 0; i < size; i++) {
                     Node pop = queue.Dequeue();
                     list.Add(pop);

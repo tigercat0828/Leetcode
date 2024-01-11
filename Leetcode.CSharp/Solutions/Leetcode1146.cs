@@ -4,11 +4,11 @@ public class Leetcode1146 {
     public class SnapshotArray {    // list of dictionary
         int[] array;
         int snap;
-        List<Dictionary<int, int>> history = new();
+        List<Dictionary<int, int>> history = [];
         public SnapshotArray(int length) {
             array = new int[length];
             for (int i = 0; i < length; i++) {
-                history.Add(new Dictionary<int, int>());
+                history.Add([]);
             }
         }
 
@@ -45,7 +45,7 @@ public class Leetcode1146 {
         int[] array;
         public SnapshotArray1(int length) {
             array = new int[length];
-            history = new();
+            history = [];
         }
 
         public void Set(int index, int val) {

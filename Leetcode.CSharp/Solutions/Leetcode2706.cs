@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.CSharp.Solutions;
+﻿namespace Leetcode.CSharp.Solutions;
 public class Leetcode2706 {
     public int BuyChoco(int[] prices, int money) {
         // find two smallest A,B
