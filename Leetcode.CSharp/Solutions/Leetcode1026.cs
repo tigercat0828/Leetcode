@@ -21,7 +21,7 @@ public class Leetcode1026 {
         FindMaxDiff(node.left, min, max);
         FindMaxDiff(node.right, min, max);
     }
-    private int Max(int A,int B, int C) {
+    private int Max(int A, int B, int C) {
         return Math.Max(A, Math.Max(B, C));
     }
 

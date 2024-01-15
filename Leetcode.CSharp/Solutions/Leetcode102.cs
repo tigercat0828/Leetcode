@@ -9,7 +9,7 @@ namespace Leetcode.CSharp.Solutions {
             }
             List<IList<int>> listList = [];
             Queue<TreeNode> queue = [];
-            
+
             queue.Enqueue(root);
             while (queue.Count > 0) {
                 List<int> list = [];
