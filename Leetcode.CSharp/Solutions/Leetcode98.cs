@@ -1,7 +1,7 @@
 ﻿using Leetcode.CSharp.Common;
 
 namespace Leetcode.CSharp.Solutions {
-    public class P98_Validate_Binary_Search_Tree {
+    public class Leetcode98 {
         public bool IsValidBST(TreeNode root) {
             return check(root, long.MinValue, long.MaxValue);
         }

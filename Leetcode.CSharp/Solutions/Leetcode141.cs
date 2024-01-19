@@ -1,7 +1,7 @@
 ﻿using Leetcode.CSharp.Common;
 
 namespace Leetcode.CSharp.Solutions {
-    public class P141_Linked_List_Cycle {
+    public class Leetcode141 {
 
         public bool HasCycle(ListNode head) {
             if (head == null) return false;

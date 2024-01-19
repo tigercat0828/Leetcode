@@ -1,8 +1,7 @@
 ﻿using Leetcode.CSharp.Common;
 
 namespace Leetcode.CSharp.Solutions {
-    public class P103_Binary_Tree_Zigzag_Level_Order_Traversal {
-
+    public class Leetcode103 {
         public IList<IList<int>> ZigzagLevelOrder(TreeNode root) {
             if (root == null) {
                 return new List<IList<int>>();

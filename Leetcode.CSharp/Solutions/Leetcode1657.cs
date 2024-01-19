@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.CSharp.Solutions {
+﻿namespace Leetcode.CSharp.Solutions {
     public class Leetcode1657 {
         public bool CloseStrings(string word1, string word2) {
             if (word1.Length != word2.Length) return false;
@@ -30,10 +24,10 @@ namespace Leetcode.CSharp.Solutions {
 
             List<int> sortedFreq1 = [.. letter1.Where(x => x > 0).Order()];
             List<int> sortedFreq2 = [.. letter2.Where(x => x > 0).Order()];
-            
 
-            for (int i = 0;i < sortedFreq1.Count;i++) {
-                if(sortedFreq1[i] != sortedFreq2[i]) return false;
+
+            for (int i = 0; i < sortedFreq1.Count; i++) {
+                if (sortedFreq1[i] != sortedFreq2[i]) return false;
             }
             return true;
         }

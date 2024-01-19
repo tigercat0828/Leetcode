@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.CSharp.Solutions {
+﻿namespace Leetcode.CSharp.Solutions {
     public class Leetcode380 {
-         class RandomizedSet {
+        class RandomizedSet {
             HashSet<int> set = [];
             Random random = new();
             public RandomizedSet() {
-                
+
             }
 
             public bool Insert(int val) {
-                if(set.Contains(val)) { 
+                if (set.Contains(val)) {
                     return false;
                 }
                 set.Add(val);
@@ -22,7 +16,7 @@ namespace Leetcode.CSharp.Solutions {
             }
 
             public bool Remove(int val) {
-                if(!set.Contains(val)) {
+                if (!set.Contains(val)) {
                     return false;
                 }
                 set.Remove(val);
@@ -32,7 +26,7 @@ namespace Leetcode.CSharp.Solutions {
             public int GetRandom() {
                 int index = random.Next(0, set.Count);
                 int i = 0;
-                foreach(int val in set) {
+                foreach (int val in set) {
                     if (i == index) return val;
                     i++;
                 }
