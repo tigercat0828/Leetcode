@@ -1,7 +1,7 @@
 ﻿using Leetcode.CSharp.Common;
 
 namespace Leetcode.CSharp.Solutions;
-public class Leetocde1161 {
+public class Leetcode1161 {
     public int MaxLevelSum(TreeNode root) {
         // do level order
         Queue<TreeNode> queue = new();

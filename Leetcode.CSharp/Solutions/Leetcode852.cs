@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P852_Peak_Index_in_a_Mountain_Array {
+    public class Leetcode852 {
         // O(logn)
         public int PeakIndexInMountainArray(int[] array) {
             return SearchPeak(array, 0, array.Length - 1);

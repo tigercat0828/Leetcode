@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P117_Populating_Next_Right_Pointers_in_Each_Node_II {
+    public class Leetcode117 {
         public class Node {
             public int val;
             public Node left;
@@ -21,12 +21,12 @@
         }
         public Node Connect(Node root) {
             if (root == null) return null;
-            List<List<Node>> levelList = new List<List<Node>>();
+            List<List<Node>> levelList = [];
             Queue<Node> queue = new Queue<Node>();
             queue.Enqueue(root);
             // level order traversal
             while (queue.Count > 0) {
-                List<Node> list = new List<Node>();
+                List<Node> list = [];
                 int size = queue.Count;
                 for (int i = 0; i < size; i++) {
                     Node pop = queue.Dequeue();

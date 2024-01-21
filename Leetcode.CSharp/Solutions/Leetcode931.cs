@@ -1,6 +1,6 @@
 ﻿namespace Leetcode.CSharp.Solutions;
 
-public class Solution {
+public class Leetcode931 {
     const int MAX_COST = 10000000;
     public int MinFallingPathSum(int[][] matrix) {
         int row = matrix.Length;
