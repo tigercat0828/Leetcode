@@ -1,6 +1,6 @@
 ﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.CSharp.Solutions; 
+namespace Leetcode.CSharp.Solutions;
 public class Leetcode112 {
 
     public bool HasPathSum(TreeNode root, int targetSum) {

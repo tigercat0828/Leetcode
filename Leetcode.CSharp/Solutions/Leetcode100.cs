@@ -1,6 +1,6 @@
 ﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.CSharp.Solutions; 
+namespace Leetcode.CSharp.Solutions;
 public class Leetcode100 {
 
     //recursion
@@ -26,8 +26,8 @@ public class Leetcode100 {
 
         if (p == null || q == null) return false;
 
-        Queue<TreeNode> queueQ = new Queue<TreeNode>();
-        Queue<TreeNode> queueP = new Queue<TreeNode>();
+        Queue<TreeNode> queueQ = [];
+        Queue<TreeNode> queueP = [];
 
         queueP.Enqueue(q);
         queueQ.Enqueue(p);

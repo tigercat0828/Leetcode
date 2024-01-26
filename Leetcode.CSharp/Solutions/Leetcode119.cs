@@ -1,4 +1,4 @@
-﻿namespace Leetcode.CSharp.Solutions; 
+﻿namespace Leetcode.CSharp.Solutions;
 public class Leetcode119 {
     public IList<int> GetRow(int rowIndex) {
         List<int> row2 = [1, 1];

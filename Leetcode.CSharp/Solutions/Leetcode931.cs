@@ -14,7 +14,7 @@ public class Leetcode931 {
             DP[i][col + 1] = MAX_COST;
         }
         for (int i = 0; i < col; i++) {
-            DP[0][ i + 1] = matrix[0][i];
+            DP[0][i + 1] = matrix[0][i];
         }
         for (int i = 1; i < row; i++) {
             for (int j = 1; j < col + 1; j++) {

@@ -1,7 +1,7 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P695_Max_Area_of_Island {
-        int[] dx = new int[] { 0, 1, 0, -1 };
-        int[] dy = new int[] { 1, 0, -1, 0 };
+    public class Leetcode695 {
+        private readonly int[] dx = [0, 1, 0, -1];
+        private readonly int[] dy = [1, 0, -1, 0];
 
         int row;
         int col;
@@ -21,7 +21,7 @@
 
         private int CalcArea(int[][] grid, int sr, int sc) {
             int area = 1;
-            Stack<(int, int)> stack = new Stack<(int, int)>();
+            Stack<(int, int)> stack = [];
             grid[sr][sc] = -1;
             stack.Push((sr, sc));
 

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.CSharp.Solutions; 
+﻿namespace Leetcode.CSharp.Solutions;
 public class Leetcode1281 {
     public int SubtractProductAndSum(int n) {
         int product = 1;

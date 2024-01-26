@@ -1,6 +1,6 @@
 ﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.CSharp.Solutions; 
+namespace Leetcode.CSharp.Solutions;
 
 // O(n) node of the root, BFS
 public class Leetcode1302 {

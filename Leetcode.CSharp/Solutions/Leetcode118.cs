@@ -1,11 +1,11 @@
-﻿namespace Leetcode.CSharp.Solutions; 
+﻿namespace Leetcode.CSharp.Solutions;
 public class Leetcode118 {
     public IList<IList<int>> Generate(int numRows) {
         List<IList<int>> result = [[1]];
         if (numRows == 1) {
             return result;
         }
-        result.Add([1,1]);
+        result.Add([1, 1]);
         if (numRows == 2) {
             return result;
         }

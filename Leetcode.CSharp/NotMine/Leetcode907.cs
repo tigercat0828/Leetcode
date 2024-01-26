@@ -1,4 +1,4 @@
-﻿namespace Leetcode.CSharp.NotMine; 
+﻿namespace Leetcode.CSharp.NotMine;
 public class Leetcode907 { // (may be hard)
                            // monotonic stack 
     public int SumSubarrayMins(int[] arr) {

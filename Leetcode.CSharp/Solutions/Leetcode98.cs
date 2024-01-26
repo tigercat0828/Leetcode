@@ -1,6 +1,6 @@
 ﻿using Leetcode.CSharp.Common;
 
-namespace Leetcode.CSharp.Solutions; 
+namespace Leetcode.CSharp.Solutions;
 public class Leetcode98 {
     public bool IsValidBST(TreeNode root) {
         return Check(root, long.MinValue, long.MaxValue);

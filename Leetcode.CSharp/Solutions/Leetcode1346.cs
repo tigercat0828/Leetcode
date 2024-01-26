@@ -1,4 +1,4 @@
-﻿namespace Leetcode.CSharp.Solutions; 
+﻿namespace Leetcode.CSharp.Solutions;
 public class Leetcode1346 {
     public bool CheckIfExist(int[] arr) {
         Dictionary<float, float> dict = [];

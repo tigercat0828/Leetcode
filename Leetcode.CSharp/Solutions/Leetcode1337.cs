@@ -1,4 +1,4 @@
-﻿namespace Leetcode.CSharp.Solutions; 
+﻿namespace Leetcode.CSharp.Solutions;
 public class Leetcode1337 {
     class RowComparer : Comparer<RowSoldierPair> {
         public override int Compare(RowSoldierPair x, RowSoldierPair y) {
