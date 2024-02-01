@@ -1,4 +1,5 @@
 ﻿using Leetcode.CSharp.Solutions;
+Dictionary<int, int> dict = [];
 
-Leetcode1143 sol = new();
-sol.LongestCommonSubsequence("abcba", "abcbcba");
+
+int a = 2000000000;

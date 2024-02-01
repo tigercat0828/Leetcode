@@ -21,7 +21,7 @@ public class Leetcode1091 {
         Queue<int[]> queue = new();
         distance[0][0] = 1;
         queue.Enqueue([0, 0]);
-        while (queue.Any()) {
+        while (queue.Count != 0) {
             int[] pop = queue.Dequeue();
             int row = pop[0];
             int col = pop[1];

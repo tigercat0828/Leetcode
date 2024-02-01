@@ -1,10 +1,11 @@
-﻿namespace Leetcode.CSharp.Solutions {
-    public class P232_Implement_Queue_using_Stacks {
+﻿namespace Leetcode.CSharp.Solutions; 
+public class Leetcode232 {
+    public class MyQueue {
         private Stack<int> stackQueue;
         private Stack<int> stackTmp;
-        public P232_Implement_Queue_using_Stacks() {
-            stackQueue = new Stack<int>();
-            stackTmp = new Stack<int>();
+        public MyQueue() {
+            stackQueue = [];
+            stackTmp = [];
         }
         public void Push(int x) {
             // move element from queue to temp
@@ -19,17 +20,15 @@
                 stackQueue.Push(pop);
             }
         }
-
         public int Pop() {
             return stackQueue.Pop();
         }
-
         public int Peek() {
             return stackQueue.Peek();
         }
-
         public bool Empty() {
             return stackQueue.Count == 0;
         }
     }
+    
 }
