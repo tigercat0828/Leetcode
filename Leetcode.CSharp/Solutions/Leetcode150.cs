@@ -1,4 +1,4 @@
-﻿namespace Leetcode.CSharp.Solutions; 
+﻿namespace Leetcode.CSharp.Solutions;
 public class Leetcode150 {
     public int EvalRPN(string[] tokens) {
         Stack<int> stack = [];
@@ -12,7 +12,7 @@ public class Leetcode150 {
             else {
                 int operandB = stack.Pop();
                 int operandA = stack.Pop();
-                int result = 0; 
+                int result = 0;
                 switch (tokens[i]) {
                     case "+":
                         result = operandA + operandB;

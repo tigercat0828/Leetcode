@@ -1,4 +1,4 @@
-﻿namespace Leetcode.CSharp.Solutions; 
+﻿namespace Leetcode.CSharp.Solutions;
 public class Leetcode232 {
     public class MyQueue {
         private Stack<int> stackQueue;
@@ -30,5 +30,5 @@ public class Leetcode232 {
             return stackQueue.Count == 0;
         }
     }
-    
+
 }

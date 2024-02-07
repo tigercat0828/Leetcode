@@ -1,32 +1,36 @@
-﻿namespace Leetcode.CSharp.Solutions {
-    public class Leetcode1291 {
+﻿namespace Leetcode.CSharp.Solutions;
+public class Leetcode1291 {
+    public IList<int> SequentialDigits(int low, int high) {
+        const string numbers = "123456789";
+        int s = 0;
+        int d = digitNum(low);
 
-        public int[] ReplaceElements(int[] arr) {
-            int max = -1;
-            for (int i = arr.Length - 1; i >= 0; i--) {
-                int tmp = arr[i];
-                arr[i] = max;
-                max = Math.Max(tmp, arr[i]);
+        int current = int.Parse(numbers.Substring(s, d));
+
+        List<int> result = [];
+        while (current <= high) {
+            if (s + d == 9) {
+                s = -1;
+                d++;
             }
-            return arr;
+            if (current >= low) {
+                result.Add(current);
+            }
+
+            if (d == 10) {
+                break;
+            }
+            current = int.Parse(numbers.Substring(++s, d));
         }
 
-        private int FindMax(int[] arr, int index) {
-            int max = arr[index];
-            for (int i = index + 1; i < arr.Length; i++) {
-                if (arr[i] > max) {
-                    max = arr[i];
-                }
-            }
-            return max;
+        return result;
+    }
+    private int digitNum(int num) {
+        int d = 0;
+        while (num != 0) {
+            num /= 10;
+            d++;
         }
-
-        public int[] ReplaceElements2(int[] arr) {
-            for (int i = 0; i < arr.Length - 1; i++) {
-                arr[i] = FindMax(arr, i + 1);
-            }
-            arr[arr.Length - 1] = -1;
-            return arr;
-        }
+        return d;
     }
 }

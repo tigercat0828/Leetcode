@@ -1,4 +1,4 @@
-﻿namespace Leetcode.CSharp.Solutions; 
+﻿namespace Leetcode.CSharp.Solutions;
 public class Leetcode446 {
 
     // DP[i][diff] number of subseq with diff at i
