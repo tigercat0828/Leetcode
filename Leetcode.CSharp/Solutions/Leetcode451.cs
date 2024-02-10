@@ -3,9 +3,7 @@
 namespace Leetcode.CSharp.Solutions;
 public class Leetcode451 {
 
-    // 0-9  
-    // A-Z, + 10
-    // a-z, + 36
+
 
     public string FrequencySort(string s) {
         Dictionary<char, int> letter = [];

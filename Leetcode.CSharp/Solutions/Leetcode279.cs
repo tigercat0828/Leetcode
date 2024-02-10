@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P279_Perfect_Squares {
+    public class Leetcode279 {
         struct Node {
             public int val;
             public int level;
@@ -14,7 +14,7 @@
             if (isSquare(n)) {
                 return 1;
             }
-            Queue<Node> queue = new Queue<Node>();
+            Queue<Node> queue = new();
             queue.Enqueue(new Node(n, 0));
             while (queue.Count != 0) {
                 Node pop = queue.Dequeue();
@@ -45,11 +45,10 @@
             }
         }
         // DP approach
-        int[] DP;
         public int NumSquares2(int n) {
             // Dynamic Programming;
             if (isSquare(n)) return 1;
-            DP = new int[n + 1];
+            int[]  DP = new int[n + 1];
             Array.Fill(DP, int.MaxValue);
             for (int i = 1; i * i <= n; i++) {
                 DP[i * i] = 1;
