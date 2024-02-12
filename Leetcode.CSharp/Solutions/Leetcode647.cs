@@ -1,6 +1,4 @@
-﻿using System.Runtime.InteropServices;
-
-namespace Leetcode.CSharp.Solutions; 
+﻿namespace Leetcode.CSharp.Solutions;
 public class Leetcode647 {
     public int CountSubstrings(string s) {
         int row = s.Length;
@@ -50,7 +48,7 @@ public class Leetcode647 {
                     Console.Write(0 + ", ");
                 }
             }
-            Console.WriteLine   ("]");
+            Console.WriteLine("]");
         }
     }
 

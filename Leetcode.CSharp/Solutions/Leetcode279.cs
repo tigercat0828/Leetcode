@@ -48,7 +48,7 @@
         public int NumSquares2(int n) {
             // Dynamic Programming;
             if (isSquare(n)) return 1;
-            int[]  DP = new int[n + 1];
+            int[] DP = new int[n + 1];
             Array.Fill(DP, int.MaxValue);
             for (int i = 1; i * i <= n; i++) {
                 DP[i * i] = 1;
