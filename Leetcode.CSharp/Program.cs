@@ -1,5 +1,5 @@
-﻿bool[] w = [true, true, true, false];
-Console.WriteLine(string.Join(",", w));
+﻿using Leetcode.CSharp.Solutions;
 
+Leetcode2108 leetcode = new();
 
-
+leetcode.FirstPalindrome(["racecar"]);
