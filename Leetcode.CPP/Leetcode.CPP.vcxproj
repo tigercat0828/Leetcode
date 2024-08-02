@@ -128,9 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Solutions\Leetcode198.cpp" />
-    <ClCompile Include="Solutions\Leetcode300.cpp" />
-    <ClCompile Include="Solutions\Leetcode70.cpp" />
+    <ClCompile Include="Solutions\Leetcode198.hpp" />
+    <ClCompile Include="Solutions\Leetcode300.hpp" />
+    <ClCompile Include="Solutions\Leetcode70.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Leetcode2678.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

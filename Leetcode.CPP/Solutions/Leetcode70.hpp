@@ -1,4 +1,5 @@
-class Solution {
+#pragma once
+class Leetcode70 {
 public:
     int climbStairs(int n) {
 		if (n < 3) return n;

@@ -18,14 +18,19 @@
     <ClCompile Include="Main.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
-    <ClCompile Include="Solutions\Leetcode300.cpp">
-      <Filter>來源檔案</Filter>
+    <ClCompile Include="Solutions\Leetcode300.hpp">
+      <Filter>標頭檔</Filter>
     </ClCompile>
-    <ClCompile Include="Solutions\Leetcode70.cpp">
-      <Filter>來源檔案</Filter>
+    <ClCompile Include="Solutions\Leetcode70.hpp">
+      <Filter>標頭檔</Filter>
     </ClCompile>
-    <ClCompile Include="Solutions\Leetcode198.cpp">
-      <Filter>來源檔案</Filter>
+    <ClCompile Include="Solutions\Leetcode198.hpp">
+      <Filter>標頭檔</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Leetcode2678.hpp">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
