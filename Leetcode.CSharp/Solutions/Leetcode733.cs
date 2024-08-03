@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P733_Flood_Fill {
+    public class Leetcode733 {
 
         int[] dx = new int[] { 1, 0, -1, 0 };
         int[] dy = new int[] { 0, -1, 0, 1 };

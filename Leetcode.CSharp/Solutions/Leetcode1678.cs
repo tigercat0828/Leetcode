@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P1678_Goal_Parser_Interpretation {
+    public class Leetcode1678 {
         public string Interpret(string command) {
             // G, (), (al);
             string result = "";

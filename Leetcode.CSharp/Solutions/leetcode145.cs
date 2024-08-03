@@ -1,7 +1,7 @@
 ﻿using Leetcode.CSharp.Common;
 
 namespace Leetcode.CSharp.Solutions {
-    public class P145_Binary_Tree_Postorder_Traversal {
+    public class leetcode145 {
         // iterative
         public IList<int> PostorderTraversal(TreeNode root) {
             if (root == null) {

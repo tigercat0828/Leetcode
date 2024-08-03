@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P155_Min_Stack {
+    public class Leetcode155 {
         struct Node {
             public int val;
             public int min;
@@ -9,7 +9,7 @@
             }
         }
         List<Node> stack;
-        public P155_Min_Stack() {
+        public Leetcode155() {
             stack = new List<Node>();
         }
 

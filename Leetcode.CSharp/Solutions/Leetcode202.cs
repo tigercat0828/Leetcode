@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P202_Happy_Number {
+    public class Leetcode202 {
         public bool IsHappy(int n) {
 
             HashSet<int> visited = new HashSet<int>();

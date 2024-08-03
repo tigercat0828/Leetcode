@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P1356_Sort_Integers_by_The_Number_of_1_Bits {
+    public class Leetcode1356 {
 
         private static int CountOneBit(int num) {
             int ones = 0;

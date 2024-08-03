@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P69_Sqrt_x {
+    public class Leetcode69 {
         // Binary Search O(logx)
         public int MySqrt(int x) {
             if (x == 0 || x == 1) return x;

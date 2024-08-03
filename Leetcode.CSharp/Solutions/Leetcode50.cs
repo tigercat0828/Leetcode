@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P50_Pow_x_n {
+    public class Leetcode50 {
         Dictionary<int, double> memo = new Dictionary<int, double>();
         public double MyPow(double x, int n) {
             memo = new Dictionary<int, double>();

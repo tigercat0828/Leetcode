@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P383_Ransom_Note {
+    public class Leetcode383 {
         // O(n)
         public bool CanConstruct(string ransomNote, string magazine) {
             int[] dictRasom = new int[26];

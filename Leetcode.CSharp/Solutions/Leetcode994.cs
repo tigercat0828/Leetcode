@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P994_Rotting_Oranges {
+    public class Leetcode994 {
         Vec2[] dirs = new Vec2[] {
             new Vec2(0,1),
             new Vec2(0,-1),

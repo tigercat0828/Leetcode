@@ -1,7 +1,7 @@
 ﻿using Leetcode.CSharp.Common;
 
 namespace Leetcode.CSharp.Solutions {
-    public class P876_Middle_of_the_Linked_List {
+    public class Leetcode876 {
         // O(n/2) by fast and slow pointer
         public ListNode MiddleNode(ListNode head) {
             ListNode fast = head;

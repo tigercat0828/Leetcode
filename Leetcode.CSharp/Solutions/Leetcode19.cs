@@ -1,7 +1,7 @@
 ﻿using Leetcode.CSharp.Common;
 
 namespace Leetcode.CSharp.Solutions {
-    public class P19_Remove_Nth_Node_From_End_of_List {
+    public class Leetcode19 {
 
         public ListNode RemoveNthFromEnd(ListNode head, int n) {
             ListNode fast = head;

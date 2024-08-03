@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P53_Maximum_Subarray {
+    public class Leetcode53 {
 
         // O(n)
         public int MaxSubArray(int[] nums) {

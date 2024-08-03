@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P1539_Kth_Missing_Positive_Number {
+    public class Leetcode1539 {
         // O(n)
         public int FindKthPositive(int[] arr, int k) {
             if (k < arr[0]) {

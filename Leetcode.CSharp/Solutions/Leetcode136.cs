@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P136_Single_Number {
+    public class Leetcode136 {
 
         // O(n) Xor operation 
         public int SingleNumber(int[] nums) {

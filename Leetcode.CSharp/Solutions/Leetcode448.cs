@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P448_Find_All_Numbers_Disappeared_in_an_Array {
+    public class Leetcode448 {
         //no external space 
         public IList<int> FindDisappearedNumbers(int[] nums) {
 
