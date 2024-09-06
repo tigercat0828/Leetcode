@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class P167_Two_Sum_II_Input_Array_Is_Sorted {
+    public class Leetcode167 {
         // O(n) two pointer
         public int[] TwoSum(int[] numbers, int target) {
             int left = 0;

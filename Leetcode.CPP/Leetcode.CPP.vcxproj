@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Leetcode1460.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Solutions\Leetcode198.hpp" />
     <ClCompile Include="Solutions\Leetcode300.hpp" />

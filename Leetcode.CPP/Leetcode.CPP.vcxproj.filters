@@ -27,6 +27,9 @@
     <ClCompile Include="Solutions\Leetcode198.hpp">
       <Filter>標頭檔</Filter>
     </ClCompile>
+    <ClCompile Include="Leetcode1460.cpp">
+      <Filter>標頭檔</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Leetcode2678.hpp">
