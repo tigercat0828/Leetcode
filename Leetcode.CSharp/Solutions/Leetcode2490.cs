@@ -1,8 +1,4 @@
 ﻿
-
-using System.Net.Mail;
-using System.Security.AccessControl;
-
 namespace Leetcode.CSharp.Solutions;
 
 public class Leetcode2490

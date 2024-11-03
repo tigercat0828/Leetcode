@@ -2,9 +2,19 @@
 //
 
 #include <iostream>
-
+#include <string>
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    string s = "abcde";
+    string goal = "abced";
+    string t = s + s;
+    cout << t << endl;
+    cout << t.find(goal) << endl;
+    if (t.find(goal) < 0) {
+        cout << "not" << endl;
+    }
+    
+    return 0;
 }
 
