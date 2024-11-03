@@ -1,5 +1,5 @@
 ﻿using Leetcode.CSharp.Solutions;
 
-Leetcode2108 leetcode = new();
-
-leetcode.FirstPalindrome(["racecar"]);
+string a = "1234";
+Console.WriteLine(a[0]);
+Console.WriteLine(a[^1]);
