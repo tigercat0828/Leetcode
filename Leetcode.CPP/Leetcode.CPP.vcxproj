@@ -127,8 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Leetcode1422.hpp" />
     <ClCompile Include="Leetcode1460.hpp" />
-    <ClCompile Include="Leetcode796.cpp" />
+    <ClCompile Include="Leetcode796.hpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Solutions\Leetcode198.hpp" />
     <ClCompile Include="Solutions\Leetcode300.hpp" />
@@ -137,6 +138,7 @@
   <ItemGroup>
     <ClInclude Include="Leetcode2134.hpp" />
     <ClInclude Include="Leetcode2678.hpp" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

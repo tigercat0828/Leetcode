@@ -30,7 +30,10 @@
     <ClCompile Include="Leetcode1460.hpp">
       <Filter>標頭檔</Filter>
     </ClCompile>
-    <ClCompile Include="Leetcode796.cpp">
+    <ClCompile Include="Leetcode1422.hpp">
+      <Filter>標頭檔</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode796.hpp">
       <Filter>標頭檔</Filter>
     </ClCompile>
   </ItemGroup>
@@ -39,6 +42,9 @@
       <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="Leetcode2134.hpp">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>
