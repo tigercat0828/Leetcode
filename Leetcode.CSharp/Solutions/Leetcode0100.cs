@@ -1,7 +1,7 @@
 ﻿using Leetcode.CSharp.Common;
 
 namespace Leetcode.CSharp.Solutions;
-public class Leetcode100 {
+public class Leetcode0100 {
 
     //recursion
     public bool IsSameTree(TreeNode p, TreeNode q) {

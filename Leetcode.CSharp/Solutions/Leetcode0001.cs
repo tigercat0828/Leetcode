@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions;
-public class Leetcode1 {
+public class Leetcode0001 {
     // O(n)
     public int[] TwoSum(int[] nums, int target) {
         Dictionary<int, int> dict = [];

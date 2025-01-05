@@ -1,7 +1,7 @@
 ﻿using Leetcode.CSharp.Common;
 
 namespace Leetcode.CSharp.Solutions;
-public class Leetcode101 {
+public class Leetcode0101 {
     public bool IsSymmetric(TreeNode root) {
         Queue<TreeNode> queue = [];
 
