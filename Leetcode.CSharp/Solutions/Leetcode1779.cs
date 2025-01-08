@@ -1,6 +1,6 @@
 ﻿namespace Leetcode.CSharp.Solutions {
     // O(n)
-    public class P1779_Find_Nearest_Point_That_Has_the_Same_X_or_Y_Coordinate {
+    public class Leetcode1779 {
         public int NearestValidPoint(int x, int y, int[][] points) {
             int min = int.MaxValue;
             int index = -1;

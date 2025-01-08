@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions {
-    public class Leetcode45 {
+    public class Leetcode0045 {
         struct Node {
 
             public Node(int position, int move, int level) {

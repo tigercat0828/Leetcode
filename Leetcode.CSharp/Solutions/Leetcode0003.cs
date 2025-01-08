@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions;
-public class Leetcode3 {
+public class Leetcode0003 {
     // time O(n)
     // space O(256) = O(1)
     public int LengthOfLongestSubstring(string s) {

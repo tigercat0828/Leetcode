@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions;
-public class Leetcode455 {
+public class Leetcode0455 {
     public int FindContentChildren(int[] g, int[] s) {
         Array.Sort(g);
         Array.Sort(s);

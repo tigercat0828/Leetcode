@@ -1,5 +1,5 @@
 ﻿namespace Leetcode.CSharp.Solutions;
-public class Leetcode36 {
+public class Leetcode0036 {
     int[] count = new int[10];
     int[][] board;
     public bool IsValidSudoku(char[][] board) {

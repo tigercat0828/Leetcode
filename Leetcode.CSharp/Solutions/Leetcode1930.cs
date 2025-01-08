@@ -1,4 +1,4 @@
-﻿namespace Leetcode.CSharp;
+﻿namespace Leetcode.CSharp.Solutions;
 public class Leetcode1930 {
     string str;
     public int CountPalindromicSubsequence(string s) {
